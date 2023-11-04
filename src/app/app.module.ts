@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
-import { FooterComponent } from './components/homepage/footer/footer.component';
-import { NavbarComponent } from './components/homepage/navbar/navbar.component';
+import { FooterComponent } from './components/home/footer/footer.component';
+import { NavbarComponent } from './components/home/navbar/navbar.component';
 import { AboutusComponent } from './components/home/aboutus/aboutus.component';
 import { DiscussionListComponent } from './components/events/discussion-list/discussion-list.component';
 import { DiscussionComponent } from './components/events/discussion/discussion.component';
@@ -14,6 +14,8 @@ import { DiscussionFormComponent } from './components/forms/discussion-form/disc
 import { AnimeFormComponent } from './components/forms/anime-form/anime-form.component';
 import { AnimeListComponent } from './components/anime_ranks/anime-list/anime-list.component';
 import { AnimeComponent } from './components/anime_ranks/anime/anime.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,15 @@ import { AnimeComponent } from './components/anime_ranks/anime/anime.component';
     DiscussionFormComponent,
     AnimeFormComponent,
     AnimeListComponent,
-    AnimeComponent
+    AnimeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
