@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.form {
+  margin-top: 0;
+  padding-top: 0;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  width: 70%;
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  border-left: 3px solid #00000085;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 550;
+  margin-bottom: 1rem;
+  letter-spacing: 1.1px;
+}
+
+.btn {
+  padding: 10%;
+}
+
+a {
+  padding-left: 2px;
+  text-decoration: none;
+  color: rgb(37, 37, 171);
+  font-weight: 500;
+}
+
+.logo {
+  width: 20%;
+}

@@ -16,6 +16,8 @@ import { AnimeListComponent } from './components/anime_ranks/anime-list/anime-li
 import { AnimeComponent } from './components/anime_ranks/anime/anime.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
+    MatInputModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
