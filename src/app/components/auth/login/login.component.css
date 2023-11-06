@@ -49,3 +49,7 @@ a {
 .logo {
   width: 20%;
 }
+
+h2 {
+  letter-spacing: 1.3px;
+}
