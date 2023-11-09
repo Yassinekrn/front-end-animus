@@ -8,8 +8,8 @@ export class Discussion {
     public description: string,
     public date: Date,
     public spoiler: boolean,
-    public animes: Anime[],
+    public animes: number[],
     public participants: Member[],
-    public priority: number,
+    public priority: number
   ) {}
 }
