@@ -14,35 +14,23 @@ import { DiscussionFormComponent } from './components/forms/discussion-form/disc
 import { AnimeFormComponent } from './components/forms/anime-form/anime-form.component';
 import { AnimeListComponent } from './components/anime_ranks/anime-list/anime-list.component';
 import { AnimeComponent } from './components/anime_ranks/anime/anime.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    FooterComponent,
-    NavbarComponent,
     AboutusComponent,
     DiscussionListComponent,
     DiscussionComponent,
     DiscussionFormComponent,
     AnimeFormComponent,
     AnimeListComponent,
-    AnimeComponent,
+    AnimeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatSlideToggleModule,
-    MatInputModule,
-    MatButtonModule,
-    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
