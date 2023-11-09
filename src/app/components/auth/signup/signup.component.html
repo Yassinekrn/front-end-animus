@@ -1,1 +1,36 @@
-<p>signup works!</p>
+<!-- form for signing up -->
+<div class="background">
+  <h2>Sign Up for Our Club</h2>
+  <img src="assets/lion_logo-modified.png" alt="logo image" />
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="minimal-form">
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" formControlName="last_name" />
+
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" formControlName="first_name" />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" formControlName="email" />
+
+    <label for="password">Password</label>
+    <input type="password" id="password" formControlName="password" />
+
+    <label for="confirm_password">Confirm Password</label>
+    <input
+      type="password"
+      id="confirm_password"
+      formControlName="confirm_password"
+    />
+    <br />
+
+    <p class="Terms">
+      By clicking Sign Up, you are agreeing to the
+      <a href="">Terms of Use</a> including the arbitration clause and you are
+      acknowledging the <a href="">Privacy Policy</a>
+    </p>
+
+    <button type="submit" [disabled]="!myForm.valid" class="submit-button">
+      Sign Up
+    </button>
+  </form>
+</div>

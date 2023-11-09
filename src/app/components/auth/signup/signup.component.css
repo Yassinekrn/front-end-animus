@@ -1,0 +1,67 @@
+/* CSS to style the form */
+.minimal-form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 0 8px 0;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button.submit-button {
+  display: block;
+  width: 100%;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+img {
+  width: 10%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 45%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Terms {
+  font-size: small;
+}
+
+a {
+  text-decoration: none;
+  color: #4285f4;
+}
+
+/* .background {
+  background-image: url("../../../../assets/sign-up.jpg");
+} */
