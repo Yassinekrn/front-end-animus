@@ -1,29 +1,43 @@
 <div class="container">
   <div class="form">
-    <!-- logo -->
+    <br />
+    <br />
+    <br />
+    <h1>アニムス</h1>
     <img class="logo" src="assets/lion_logo-modified.png" alt="logo" />
-    <!-- header for sign up -->
     <h2>log in to your account</h2>
     <p>don't have an account?<a href="#">Sign Up</a></p>
-    <!-- actual form -->
-    <form class="example-form">
+
+    <!-- Add (ngSubmit)="login()" to the form tag to call the login function on form submission -->
+    <form class="example-form" [formGroup]="loginForm" (ngSubmit)="login()">
       <!-- username -->
       <p class="label">Username</p>
       <mat-form-field class="example-full-width">
-        <mat-label>Username</mat-label>
-        <input matInput />
+        <mat-label class="label">Username</mat-label>
+        <!-- Add formControlName to bind the input to the corresponding form control -->
+        <input matInput formControlName="username" />
+        <!-- Display an error message if the username control is invalid -->
+        <mat-error *ngIf="loginForm.get('username').hasError('required')">
+          <sub>Username is required</sub>
+        </mat-error>
       </mat-form-field>
       <br />
       <!-- password -->
       <p class="label">Password</p>
       <mat-form-field class="example-full-width">
-        <mat-label>Password</mat-label>
-        <input type="password" matInput />
+        <mat-label class="label">Password</mat-label>
+        <!-- Add formControlName to bind the input to the corresponding form control -->
+        <input type="password" matInput formControlName="password" />
+        <mat-error *ngIf="loginForm.get('password').hasError('required')">
+          <sub>Password is required</sub>
+        </mat-error>
       </mat-form-field>
       <br />
-      <button class="btn" mat-raised-button color="primary">Log In</button>
+      <button class="btn" mat-raised-button color="primary" type="submit">
+        Log In
+      </button>
     </form>
-    <!-- end of form -->
   </div>
-  <img class="picture" src="../../../../assets/login_cover.jpg" />
+
+  <img class="picture" src="assets/login_cover.jpg" />
 </div>
