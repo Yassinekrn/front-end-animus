@@ -9,6 +9,7 @@ export class Discussion {
     public date: Date,
     public spoiler: boolean,
     public animes: Anime[],
-    public participants: Member[]
+    public participants: Member[],
+    public priority: number,
   ) {}
 }
