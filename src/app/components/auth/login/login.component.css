@@ -1,4 +1,4 @@
-.container {
+.cont {
   display: flex;
   flex-direction: row;
   height: 100vh;
@@ -6,7 +6,7 @@
   gap: 0;
 }
 
-.form {
+.formulaire {
   margin-top: 0;
   padding-top: 0;
   width: 30%;
@@ -35,7 +35,7 @@
   letter-spacing: 1.1px;
 }
 
-.btn {
+.button {
   padding: 10%;
   margin-top: 10px;
   width: 100%;

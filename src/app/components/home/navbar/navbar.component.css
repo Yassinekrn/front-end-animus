@@ -1,0 +1,15 @@
+input[type="search"] {
+  padding-right: 400px;
+}
+
+.empty {
+  width: 45px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.zid {
+  margin-right: 391px;
+}

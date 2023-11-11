@@ -1,12 +1,12 @@
-<div class="container">
-  <div class="form">
+<div class="cont">
+  <div class="formulaire">
     <br />
     <br />
     <br />
     <h1>アニムス</h1>
     <img class="logo" src="assets/lion_logo-modified.png" alt="logo" />
     <h2>log in to your account</h2>
-    <p>don't have an account?<a href="#">Sign Up</a></p>
+    <p>don't have an account?<a routerLink="/signup">Sign Up</a></p>
 
     <!-- Add (ngSubmit)="login()" to the form tag to call the login function on form submission -->
     <form class="example-form" [formGroup]="loginForm" (ngSubmit)="login()">
@@ -33,7 +33,7 @@
         </mat-error>
       </mat-form-field>
       <br />
-      <button class="btn" mat-raised-button color="primary" type="submit">
+      <button class="button" mat-raised-button color="primary" type="submit">
         Log In
       </button>
     </form>

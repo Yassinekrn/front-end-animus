@@ -18,6 +18,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
+import { MainComponent } from './components/main/main.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { HeroComponent } from './components/home/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { HttpClientModule } from '@angular/common/http';
     AnimeComponent,
     FooterComponent,
     NavbarComponent,
+    MainComponent,
+    AdminComponent,
+    HeroComponent,
   ],
   imports: [
     BrowserModule,

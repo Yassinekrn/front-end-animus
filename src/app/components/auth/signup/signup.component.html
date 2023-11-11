@@ -1,35 +1,75 @@
 <!-- form for signing up -->
-<div class="background">
-  <h2>Sign Up for Our Club</h2>
-  <img src="assets/lion_logo-modified.png" alt="logo image" />
+<div class="container background">
+  <h2 class="text-center">Sign Up for Our Club</h2>
+  <img
+    src="assets/lion_logo-modified.png"
+    alt="logo image"
+    class="mx-auto d-block mb-4"
+  />
+
   <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="minimal-form">
-    <label for="last_name">Last Name</label>
-    <input type="text" id="last_name" formControlName="last_name" />
+    <div class="form-group">
+      <label for="last_name">Last Name</label>
+      <input
+        type="text"
+        id="last_name"
+        formControlName="last_name"
+        class="form-control"
+      />
+    </div>
 
-    <label for="first_name">First Name</label>
-    <input type="text" id="first_name" formControlName="first_name" />
+    <div class="form-group">
+      <label for="first_name">First Name</label>
+      <input
+        type="text"
+        id="first_name"
+        formControlName="first_name"
+        class="form-control"
+      />
+    </div>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" formControlName="email" />
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        formControlName="email"
+        class="form-control"
+      />
+    </div>
 
-    <label for="password">Password</label>
-    <input type="password" id="password" formControlName="password" />
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        class="form-control"
+      />
+    </div>
 
-    <label for="confirm_password">Confirm Password</label>
-    <input
-      type="password"
-      id="confirm_password"
-      formControlName="confirm_password"
-    />
-    <br />
+    <div class="form-group">
+      <label for="confirm_password">Confirm Password</label>
+      <input
+        type="password"
+        id="confirm_password"
+        formControlName="confirm_password"
+        class="form-control"
+      />
+    </div>
 
-    <p class="Terms">
+    <p class="Terms small">
       By clicking Sign Up, you are agreeing to the
-      <a href="">Terms of Use</a> including the arbitration clause and you are
-      acknowledging the <a href="">Privacy Policy</a>
+      <a href="#" class="text-primary">Terms of Use</a> including the
+      arbitration clause and you are acknowledging the
+      <a href="#" class="text-primary">Privacy Policy</a>
     </p>
 
-    <button type="submit" [disabled]="!myForm.valid" class="submit-button">
+    <button
+      type="submit"
+      [disabled]="!myForm.valid"
+      class="btn btn-primary btn-block"
+    >
       Sign Up
     </button>
   </form>
