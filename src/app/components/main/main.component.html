@@ -5,7 +5,7 @@
 </p>
 <div *ngFor="let discussion of discussions">
   <!-- {{ discussion | json }} -->
-  <p>ID: {{ discussion.id }}</p>
+  <!-- <p>ID: {{ discussion.id }}</p>
   <p>Title: {{ discussion.title }}</p>
   <p>Description: {{ discussion.description }}</p>
   <p>Date: {{ discussion.date | date }}</p>
@@ -22,7 +22,7 @@
     <li *ngFor="let participant of discussion.participants">
       {{ participant.first_name }} {{ participant.last_name }}
     </li>
-  </ul>
+  </ul> -->
 </div>
 <router-outlet></router-outlet>
 <!-- <app-discussion></app-discussion> -->
