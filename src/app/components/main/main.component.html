@@ -3,6 +3,27 @@
   navbar sets content -> defaults to discussions can go to aboutus, and if we
   have time, a ranking page for anime
 </p>
+<div *ngFor="let discussion of discussions">
+  <!-- {{ discussion | json }} -->
+  <p>ID: {{ discussion.id }}</p>
+  <p>Title: {{ discussion.title }}</p>
+  <p>Description: {{ discussion.description }}</p>
+  <p>Date: {{ discussion.date | date }}</p>
+  <p>Spoiler: {{ discussion.spoiler ? "Yes" : "No" }}</p>
+  <p>Priority: {{ discussion.priority }}</p>
+  <p>Animes:</p>
+  <ul>
+    <li *ngFor="let anime of discussion.animes">
+      {{ anime.title }}
+    </li>
+  </ul>
+  <p>Participants:</p>
+  <ul>
+    <li *ngFor="let participant of discussion.participants">
+      {{ participant.first_name }} {{ participant.last_name }}
+    </li>
+  </ul>
+</div>
 <router-outlet></router-outlet>
 <!-- <app-discussion></app-discussion> -->
 <app-footer></app-footer>
