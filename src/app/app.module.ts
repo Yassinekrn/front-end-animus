@@ -21,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './components/main/main.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { HeroComponent } from './components/home/hero/hero.component';
+import { JournalPipe } from './pipes/journal.pipe';
+import { DiscussionInfoComponent } from './components/events/discussion-info/discussion-info.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { HeroComponent } from './components/home/hero/hero.component';
     MainComponent,
     AdminComponent,
     HeroComponent,
+    JournalPipe,
+    DiscussionInfoComponent,
   ],
   imports: [
     BrowserModule,
