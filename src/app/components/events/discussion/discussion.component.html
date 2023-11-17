@@ -6,13 +6,12 @@
     </p>
     <span class="badge badge-info">{{ discussion.date | date }}</span>
     <p class="card-text">
-      <strong>Spoiler:</strong>
       <span
         [class]="
           discussion.spoiler ? 'badge badge-danger' : 'badge badge-success'
         "
       >
-        {{ discussion.spoiler ? "Yes" : "No" }}
+        {{ discussion.spoiler ? "Spoiler Alert" : "Spoiler Free" }}
       </span>
     </p>
     <p class="card-text">
@@ -35,25 +34,25 @@
       </span>
     </p>
 
-    <div>
-      <p class="card-text"><strong>Animes:</strong></p>
-      <ul class="list-group">
-        <li class="list-group-item" *ngFor="let anime of discussion.animes">
-          {{ anime.title }}
-        </li>
-      </ul>
-    </div>
+    <div class="d-flex align-items-center">
+      <button
+        class="btn btn-info mr-2"
+        [routerLink]="'/home/discussions/' + discussion.id"
+      >
+        Info
+      </button>
 
-    <div>
-      <p class="card-text"><strong>Participants:</strong></p>
-      <ul class="list-group">
-        <li
-          class="list-group-item"
-          *ngFor="let participant of discussion.participants"
-        >
-          {{ participant.first_name }} {{ participant.last_name }}
-        </li>
-      </ul>
+      <div *ngIf="showJoinLeaveButton">
+        <button (click)="joinLeaveDiscussion()" class="btn btn-primary mr-2">
+          {{ Joined ? "Leave" : "Join" }}
+        </button>
+      </div>
+
+      <div *ngIf="showEditDeleteButton">
+        <button class="btn btn-warning mr-2">Update</button>
+        <button class="btn btn-danger">Delete</button>
+      </div>
     </div>
   </div>
 </div>
+<br />

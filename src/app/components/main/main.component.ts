@@ -8,11 +8,6 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
-  discussions: Discussion[];
-  constructor(private discussionService: DataService) {}
-  ngOnInit(): void {
-    this.discussionService.getDiscussions().subscribe((data) => {
-      this.discussions = data;
-    });
-  }
+  constructor() {}
+  ngOnInit(): void {}
 }

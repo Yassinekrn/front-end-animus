@@ -60,7 +60,8 @@
         </button>
       </form>
       <div class="zid"></div>
-      <button class="btn btn-secondary" (click)="goToLogin()">
+      <button class="btn btn-secondary" (click)="LogIn_LogOut()">
+        {{ this.auth ? "Logout" : "Login" }}
         <i class="fa-solid fa-right-to-bracket"></i>
       </button>
       <!-- with ngIf will change based on the auth -->

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from 'src/app/services/auth.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -10,7 +12,11 @@ export class LoginComponent {
   // Define the form group and other necessary variables
   loginForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(
+    private formBuilder: FormBuilder,
+    private authService: AuthService,
+    private router: Router
+  ) {
     // Initialize the form with default values and validations
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
@@ -30,6 +36,14 @@ export class LoginComponent {
       // For now, let's just log the values to the console
       console.log('Username:', username);
       console.log('Password:', password);
+
+      this.authService.login(username, password).subscribe((success) => {
+        if (success) {
+          this.router.navigate(['/home/discussions']);
+        } else {
+          this.loginForm.reset();
+        }
+      });
 
       // You can also navigate to another page or perform any other action after successful login
     }

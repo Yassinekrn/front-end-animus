@@ -1,29 +1,58 @@
-<!-- <div class="card">
+<div class="container">
+  <div class="card">
     <div class="card-body">
-      <h5 class="card-title">Discussion ID: {{ discussion.id }}</h5>
-      <p class="card-text"><strong>Title:</strong> {{ discussion.title }}</p>
+      <h5 class="card-title">
+        Discussion N°{{ discussion.id }} | {{ discussion.title }}
+      </h5>
+
       <p class="card-text">
-        <strong>Description:</strong> {{ discussion.description }}
-      </p>
-      <p class="card-text"><strong>Date:</strong> {{ discussion.date | date }}</p>
-      <p class="card-text">
-        <strong>Spoiler:</strong> {{ discussion.spoiler ? "Yes" : "No" }}
+        <strong>Description: </strong> {{ discussion.description }}
       </p>
       <p class="card-text">
-        <strong>Priority:</strong> {{ discussion.priority }}
+        <strong>Date: </strong>
+        <span class="badge badge-info">{{ discussion.date | date }}</span>
       </p>
-  
+      <p class="card-text">
+        <strong>Spoiler: </strong>
+        <span
+          [class]="
+            discussion.spoiler ? 'badge badge-danger' : 'badge badge-success'
+          "
+        >
+          {{ discussion.spoiler ? "Yes" : "No" }}
+        </span>
+      </p>
+      <p class="card-text">
+        <strong>Priority: </strong>
+        <span
+          *ngFor="
+            let star of [].constructor(discussion.priority).fill(0);
+            let i = index
+          "
+        >
+          <i class="fas fa-star"></i>
+        </span>
+        <span
+          *ngFor="
+            let star of [].constructor(5 - discussion.priority).fill(0);
+            let i = index
+          "
+        >
+          <i class="far fa-star"></i>
+        </span>
+      </p>
+
       <div>
-        <p class="card-text"><strong>Animes:</strong></p>
+        <p class="card-text"><strong>Animes: </strong></p>
         <ul class="list-group">
           <li class="list-group-item" *ngFor="let anime of discussion.animes">
             {{ anime.title }}
           </li>
         </ul>
       </div>
-  
+
       <div>
-        <p class="card-text"><strong>Participants:</strong></p>
+        <p class="card-text"><strong>Participants: </strong></p>
         <ul class="list-group">
           <li
             class="list-group-item"
@@ -35,5 +64,12 @@
       </div>
     </div>
   </div>
-   -->
-<p>discussion info works !</p>
+  <br />
+  <div class="text-center">
+    <button class="btn btn-dark" routerLink="/home/discussions">
+      Go back to discussions
+    </button>
+  </div>
+</div>
+
+<br />

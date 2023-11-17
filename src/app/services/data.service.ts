@@ -85,6 +85,10 @@ export class DataService {
     return this.http.get<Discussion[]>(this.discussionUrl);
   }
 
+  getDiscussion(id: number): Observable<Discussion> {
+    return this.http.get<Discussion>(`${this.discussionUrl}/${id}`);
+  }
+
   addDiscussion(discussion: Discussion): Observable<Discussion> {
     return this.http.post<Discussion>(this.discussionUrl, discussion);
   }
@@ -98,5 +102,10 @@ export class DataService {
 
   deleteDiscussion(id: number): Observable<Discussion> {
     return this.http.delete<Discussion>(`${this.discussionUrl}/${id}`);
+  }
+
+  isUserInDiscussion(userId: string, discussionId: number): boolean {
+    //TODO: implement this method
+    return true;
   }
 }

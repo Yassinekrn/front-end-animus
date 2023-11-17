@@ -7,6 +7,7 @@ import { SignupComponent } from './components/auth/signup/signup.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AboutusComponent } from './components/home/aboutus/aboutus.component';
 import { AnimeListComponent } from './components/anime_ranks/anime-list/anime-list.component';
+import { DiscussionInfoComponent } from './components/events/discussion-info/discussion-info.component';
 
 /* 
 defaults to home page /home
@@ -32,6 +33,11 @@ const routes: Routes = [
       },
       { path: 'aboutus', title: 'About Us', component: AboutusComponent },
       { path: 'animes', title: 'Animes', component: AnimeListComponent },
+      {
+        path: 'discussions/:id',
+        title: 'Discussion Infos',
+        component: DiscussionInfoComponent,
+      },
       { path: '**', redirectTo: 'discussions', pathMatch: 'full' },
     ],
   },
