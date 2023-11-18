@@ -19,11 +19,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './components/main/main.component';
-import { AdminComponent } from './components/admin/admin.component';
+import { AdminComponent } from './components/private/admin/admin.component';
 import { HeroComponent } from './components/home/hero/hero.component';
 import { JournalPipe } from './pipes/journal.pipe';
 import { DiscussionInfoComponent } from './components/events/discussion-info/discussion-info.component';
 import { DiscussionUpdateComponent } from './components/forms/discussion-update/discussion-update.component';
+import { AccountsComponent } from './components/private/accounts/accounts.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,7 @@ import { DiscussionUpdateComponent } from './components/forms/discussion-update/
     JournalPipe,
     DiscussionInfoComponent,
     DiscussionUpdateComponent,
+    AccountsComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,6 +57,7 @@ import { DiscussionUpdateComponent } from './components/forms/discussion-update/
     MatInputModule,
     MatButtonModule,
     HttpClientModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

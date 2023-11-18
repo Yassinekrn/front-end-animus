@@ -4,11 +4,13 @@ import { MainComponent } from './components/main/main.component';
 import { DiscussionListComponent } from './components/events/discussion-list/discussion-list.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
-import { AdminComponent } from './components/admin/admin.component';
+import { AdminComponent } from './components/private/admin/admin.component';
 import { AboutusComponent } from './components/home/aboutus/aboutus.component';
 import { AnimeListComponent } from './components/anime_ranks/anime-list/anime-list.component';
 import { DiscussionInfoComponent } from './components/events/discussion-info/discussion-info.component';
 import { DiscussionUpdateComponent } from './components/forms/discussion-update/discussion-update.component';
+import { authGuard } from './guards/auth.guard';
+import { AccountsComponent } from './components/private/accounts/accounts.component';
 
 /* 
 defaults to home page /home
@@ -44,7 +46,16 @@ const routes: Routes = [
   },
   { path: 'login', title: 'Login', component: LoginComponent },
   { path: 'signup', title: 'Signup', component: SignupComponent },
-  { path: 'admin', title: 'Admin', component: AdminComponent },
+  {
+    path: 'admin',
+    title: 'Admin',
+    component: AdminComponent,
+    canActivate: [authGuard],
+    children: [
+      { path: '', redirectTo: 'accounts', pathMatch: 'full' },
+      { path: 'accounts', title: 'Accounts', component: AccountsComponent },
+    ],
+  },
   {
     path: 'update/:id',
     title: 'Update Discussion',

@@ -60,6 +60,14 @@
         <i class="fa-solid fa-right-to-bracket"></i>
       </button>
       <!-- with ngIf will change based on the auth -->
+
+      <button
+        *ngIf="auth && role == 'admin'"
+        class="btn btn-warning ml-5"
+        routerLink="/admin/accounts"
+      >
+        {{ "Manage Accounts" | uppercase }}
+      </button>
     </div>
   </nav>
 </nav>
