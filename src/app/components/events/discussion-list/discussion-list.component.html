@@ -1,6 +1,29 @@
 <div class="container">
+  <h2 class="text-center">Discover the latest discussions</h2>
+  <hr />
+  <fieldset class="text-center mt-3">
+    <div class="input-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Find the discussion you are looking for"
+        [(ngModel)]="searchTerm"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-primary"
+          type="button"
+          (click)="searchDiscussions()"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+    <br />
+  </fieldset>
+
   <app-discussion
-    *ngFor="let discussion of discussions"
+    *ngFor="let discussion of filteredDiscussions"
     [discussion]="discussion"
   ></app-discussion>
 </div>

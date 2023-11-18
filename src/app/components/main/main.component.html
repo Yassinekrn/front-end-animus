@@ -1,9 +1,10 @@
 <app-navbar class="navbar-expand-sm fixed-top"></app-navbar>
-<br />
-<br />
-<br />
-<br />
+<div class="empty"></div>
 
+<!-- so that the navbar doesn't cover the content of other stuff -->
+
+<app-hero *ngIf="!isAuth"></app-hero>
+<br />
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>

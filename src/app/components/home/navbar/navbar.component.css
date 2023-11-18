@@ -2,33 +2,28 @@ input[type="search"] {
   padding-right: 330px;
 }
 
-.empty {
-  width: 45px;
-}
-
 .round {
   border-radius: 50%;
 }
 
-.zid {
-  margin-right: 346px;
-}
-
 .active {
   color: black;
-  font-weight: bold;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .logo {
-  background-color: rgb(0, 115, 255);
-  padding: 7px;
-  border-radius: 10%;
-  color: white;
+  padding: 7px 10px;
   font-size: 20px;
+  color: white;
   transition: all 0.3s ease-in-out;
 }
 
 .logo:hover {
-  text-decoration: none;
-  box-shadow: 2px 5px 12px 5px rgba(0, 0, 0, 0.55);
+  box-shadow: 2px 5px 12px 5px rgba(101, 100, 100, 0.55);
+  color: white;
+}
+
+nav {
+  width: 100%;
 }

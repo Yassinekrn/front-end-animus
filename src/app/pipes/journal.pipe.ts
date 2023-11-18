@@ -6,13 +6,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class JournalPipe implements PipeTransform {
   transform(value: string): string {
     if (!value) {
-      return value;
+      return '';
     }
 
     // Capitalize the first letter and make it bold
-    const transformedValue = `<b>${value
-      .charAt(0)
-      .toUpperCase()}</b>${value.slice(1)}`;
+    const transformedValue =
+      '[ "' + value.charAt(0).toUpperCase() + value.slice(1) + '" ]';
 
     return transformedValue;
   }
