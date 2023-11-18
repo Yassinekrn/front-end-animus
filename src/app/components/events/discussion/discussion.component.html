@@ -49,8 +49,18 @@
       </div>
 
       <div *ngIf="showEditDeleteButton">
-        <button class="btn btn-warning mr-2">Update</button>
-        <button class="btn btn-danger">Delete</button>
+        <button
+          class="btn btn-warning mr-2"
+          (click)="updateDiscussion(discussion.id)"
+        >
+          Update
+        </button>
+        <button
+          class="btn btn-danger"
+          (click)="deleteDiscussion(discussion.id)"
+        >
+          Delete
+        </button>
       </div>
     </div>
   </div>

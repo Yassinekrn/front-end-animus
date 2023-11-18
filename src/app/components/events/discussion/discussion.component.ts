@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Discussion } from 'src/app/classes/discussion/discussion';
 import { DataService } from 'src/app/services/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-discussion',
@@ -14,7 +15,7 @@ export class DiscussionComponent implements OnInit {
   Joined: boolean = false;
   userId: string; // Assuming you have userId available in your component
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService, private router: Router) {}
 
   ngOnInit() {
     const userRole = localStorage.getItem('userRole');
@@ -34,4 +35,15 @@ export class DiscussionComponent implements OnInit {
   }
 
   joinLeaveDiscussion() {}
+
+  deleteDiscussion(id: number) {
+    this.dataService.deleteDiscussion(id).subscribe((data) => {
+      console.log('Discussion deleted successfully\n' + data);
+    });
+  }
+
+  updateDiscussion(discussionID: number) {
+    // Navigate to the 'update' route and pass the discussion ID as a parameter
+    this.router.navigate(['/update', discussionID]);
+  }
 }

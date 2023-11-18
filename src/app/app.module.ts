@@ -23,6 +23,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { HeroComponent } from './components/home/hero/hero.component';
 import { JournalPipe } from './pipes/journal.pipe';
 import { DiscussionInfoComponent } from './components/events/discussion-info/discussion-info.component';
+import { DiscussionUpdateComponent } from './components/forms/discussion-update/discussion-update.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { DiscussionInfoComponent } from './components/events/discussion-info/dis
     HeroComponent,
     JournalPipe,
     DiscussionInfoComponent,
+    DiscussionUpdateComponent,
   ],
   imports: [
     BrowserModule,
