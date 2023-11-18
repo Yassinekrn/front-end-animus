@@ -1,19 +1,24 @@
 <div class="card">
   <div class="card-body">
     <h5 class="card-text"><strong>Title:</strong> {{ discussion.title }}</h5>
+    <!-- put the tags here -->
+    <div>
+      <span class="badge badge-info mr-2">{{ discussion.date | date }}</span>
+      <span class="card-text">
+        <span
+          [class]="
+            discussion.spoiler ? 'badge badge-danger' : 'badge badge-success'
+          "
+        >
+          {{ discussion.spoiler ? "Spoiler Alert" : "Spoiler Free" }}
+        </span>
+      </span>
+    </div>
+    <!-- end of tags -->
     <p class="card-text">
       <strong>Description:</strong> {{ discussion.description }}
     </p>
-    <span class="badge badge-info">{{ discussion.date | date }}</span>
-    <p class="card-text">
-      <span
-        [class]="
-          discussion.spoiler ? 'badge badge-danger' : 'badge badge-success'
-        "
-      >
-        {{ discussion.spoiler ? "Spoiler Alert" : "Spoiler Free" }}
-      </span>
-    </p>
+
     <p class="card-text">
       <strong>Priority:</strong>
       <span

@@ -4,62 +4,57 @@
     class="navbar navbar-expand-lg navbar-light"
     style="background-color: #e3f2fd"
   >
-    <a class="navbar-brand" routerLink="/home/discussions" class="logo"
-      >Animus</a
-    >
-    <div class="empty"></div>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarColor03"
-      aria-controls="navbarColor03"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container d-flex justify-content-between align-items-center">
+      <button
+        class="navbar-brand btn btn-secondary logo"
+        routerLink="/home/discussions"
+      >
+        Animus
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor03">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/home/animes"
-            routerLinkActive="active"
-            >Animes</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/home/discussions"
-            routerLinkActive="active"
-            >Discussions</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/home/aboutus"
-            routerLinkActive="active"
-            >About</a
-          >
-        </li>
-      </ul>
-      <div class="empty"></div>
-      <form class="form-inline">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
-      <div class="zid"></div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor03"
+        aria-controls="navbarColor03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul
+          class="navbar-nav mx-auto d-flex justify-content-between align-items-center"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/home/animes"
+              routerLinkActive="active"
+              >Animes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/home/discussions"
+              routerLinkActive="active"
+              >Discussions</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/home/aboutus"
+              routerLinkActive="active"
+              >About</a
+            >
+          </li>
+        </ul>
+      </div>
+
       <button class="btn btn-secondary" (click)="LogIn_LogOut()">
         {{ this.auth ? "Logout" : "Login" }}
         <i class="fa-solid fa-right-to-bracket"></i>

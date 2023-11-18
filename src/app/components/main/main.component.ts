@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Discussion } from 'src/app/classes/discussion/discussion';
-import { DataService } from 'src/app/services/data.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-main',
@@ -8,6 +7,9 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
-  constructor() {}
-  ngOnInit(): void {}
+  constructor(private authService: AuthService) {}
+  isAuth: boolean = false;
+  ngOnInit(): void {
+    this.isAuth = this.authService.isLoggedIn();
+  }
 }
