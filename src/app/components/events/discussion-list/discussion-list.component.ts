@@ -13,6 +13,7 @@ export class DiscussionListComponent implements OnInit {
   showJoinLeaveButton: boolean = false;
   showEditDeleteButton: boolean = false;
   searchTerm: string = ''; // Track the search term
+  spoiler: boolean = true; // so that it is not checked by default
 
   constructor(private dataService: DataService) {}
 
@@ -29,8 +30,12 @@ export class DiscussionListComponent implements OnInit {
 
   // Function to filter discussions based on the search term
   filterDiscussions() {
-    this.filteredDiscussions = this.discussions.filter((discussion) =>
-      discussion.title.toLowerCase().includes(this.searchTerm.toLowerCase())
+    this.filteredDiscussions = this.discussions.filter(
+      (discussion) =>
+        discussion.title
+          .toLowerCase()
+          .includes(this.searchTerm.toLowerCase()) &&
+        discussion.spoiler === this.spoiler
     );
   }
 

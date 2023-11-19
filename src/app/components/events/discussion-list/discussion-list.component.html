@@ -1,5 +1,7 @@
 <div class="container">
-  <h2 class="text-center">Discover the latest discussions</h2>
+  <h2 class="text-center">
+    {{ "Discover the latest discussions" | titlecase }}
+  </h2>
   <hr />
   <fieldset class="text-center mt-3">
     <div class="input-group">
@@ -9,6 +11,13 @@
         placeholder="Find the discussion you are looking for"
         [(ngModel)]="searchTerm"
       />
+      <button
+        class="btn"
+        [ngClass]="spoiler ? 'btn-danger' : 'btn-success'"
+        (click)="spoiler = !spoiler"
+      >
+        {{ spoiler ? "Spoiler and Spoiler Free" : "Only Spoiler Free" }}
+      </button>
       <div class="input-group-append">
         <button
           class="btn btn-primary"
