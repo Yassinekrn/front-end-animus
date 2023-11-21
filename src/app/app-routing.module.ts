@@ -11,6 +11,8 @@ import { DiscussionInfoComponent } from './components/events/discussion-info/dis
 import { DiscussionUpdateComponent } from './components/forms/discussion-update/discussion-update.component';
 import { authGuard } from './guards/auth.guard';
 import { AccountsComponent } from './components/private/accounts/accounts.component';
+import { UpdateAccComponent } from './components/user/update-acc/update-acc.component';
+import { AccountFormComponent } from './components/forms/account-form/account-form.component';
 
 /* 
 defaults to home page /home
@@ -43,6 +45,18 @@ const routes: Routes = [
       },
       { path: '**', redirectTo: 'discussions', pathMatch: 'full' },
     ],
+  },
+  {
+    path: 'user',
+    title: 'User Profile',
+    component: UpdateAccComponent,
+    canActivate: [authGuard],
+  },
+  {
+    path: 'update',
+    title: 'Update Password',
+    component: AccountFormComponent,
+    canActivate: [authGuard],
   },
   { path: 'login', title: 'Login', component: LoginComponent },
   { path: 'signup', title: 'Signup', component: SignupComponent },

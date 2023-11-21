@@ -26,6 +26,9 @@ import { DiscussionInfoComponent } from './components/events/discussion-info/dis
 import { DiscussionUpdateComponent } from './components/forms/discussion-update/discussion-update.component';
 import { AccountsComponent } from './components/private/accounts/accounts.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { UpdateAccComponent } from './components/user/update-acc/update-acc.component';
+import { AccountFormComponent } from './components/forms/account-form/account-form.component';
+import { HidepwdPipe } from './pipes/hidepwd.pipe';
 
 @NgModule({
   declarations: [
@@ -48,6 +51,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     DiscussionInfoComponent,
     DiscussionUpdateComponent,
     AccountsComponent,
+    UpdateAccComponent,
+    AccountFormComponent,
+    HidepwdPipe,
   ],
   imports: [
     BrowserModule,

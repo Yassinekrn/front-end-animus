@@ -68,6 +68,12 @@
       >
         {{ "Manage Accounts" | uppercase }}
       </button>
+
+      <!-- User Icon Button -->
+
+      <button *ngIf="auth" class="btn btn-secondary ml-5" routerLink="/user">
+        <i class="fas fa-user"></i>
+      </button>
     </div>
   </nav>
 </nav>

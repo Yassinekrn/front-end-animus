@@ -73,6 +73,7 @@ export class DataService {
 
   updateMember(member: Member): Observable<Member> {
     return this.http.put<Member>(`${this.memberUrl}/${member.id}`, member);
+    // the update works only on the password so I don't need to update on cascade
   }
 
   deleteMember(id: number): Observable<Member> {

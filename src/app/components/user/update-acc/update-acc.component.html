@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="display-4 text-center mt-5 mb-5">
+        <i class="fas fa-user-circle"></i>
+        Welcome user: {{ user?.first_name + " " + user?.last_name }}
+      </h1>
+    </div>
+  </div>
+
+  <div class="row container">
+    <div class="col-md-6">
+      <p class="lead">
+        <i class="fas fa-envelope"></i>
+        email: {{ user?.email }}
+      </p>
+      <p class="lead">
+        <i class="fas fa-user-tag"></i>
+        role: {{ user?.role }}
+      </p>
+      <p class="lead">
+        <i class="fas fa-calendar-alt"></i>
+        created at: {{ user?.join_date | date }}
+      </p>
+    </div>
+    <div class="col-md-6">
+      <p class="lead">
+        <i class="fas fa-id-card"></i>
+        username: {{ user?.username }}
+      </p>
+      <p class="lead">
+        <i class="fas fa-lock"></i>
+        password: {{ user?.password | hidepwd }}
+      </p>
+      <button class="btn btn-primary btn-lg" routerLink="/update">
+        <i class="fas fa-key"></i>
+        Change password
+      </button>
+    </div>
+  </div>
+</div>
