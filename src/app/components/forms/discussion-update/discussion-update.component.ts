@@ -37,8 +37,24 @@ export class DiscussionUpdateComponent implements OnInit {
 
   initializeForm(): void {
     const formControls = {
-      title: [this.discussion.title || '', Validators.required],
-      description: [this.discussion.description || '', Validators.required],
+      title: [
+        this.discussion.title || '',
+        [
+          Validators.required,
+          Validators.pattern('^[A-Z].*'),
+          Validators.minLength(5),
+          Validators.maxLength(50),
+        ],
+      ],
+      description: [
+        this.discussion.description || '',
+        [
+          Validators.required,
+          Validators.pattern('^[A-Z].*'),
+          Validators.minLength(50),
+          Validators.maxLength(500),
+        ],
+      ],
       date: [
         this.discussion.date ? new Date(this.discussion.date) : new Date(),
         Validators.required,
@@ -47,16 +63,17 @@ export class DiscussionUpdateComponent implements OnInit {
         this.discussion.img || '',
         [
           Validators.required,
-          Validators.pattern('(https?://.*.(?:png|jpg|jpeg))'),
+          Validators.pattern('^(https?://.*\\.(?:png|jpg|jpeg))'),
         ],
       ],
 
       spoiler: [this.discussion.spoiler],
       priority: [
         this.discussion.priority,
-        [Validators.min(0), Validators.max(5)],
+        [Validators.min(1), Validators.max(5)],
       ],
       animeCheckboxes: this.createAnimeCheckboxes(),
+      validators: this.atLeastOneCheckboxValidator(1),
     };
 
     this.updateDiscussionForm = this.fb.group(formControls);
@@ -112,5 +129,112 @@ export class DiscussionUpdateComponent implements OnInit {
   cancelUpdate() {
     // Navigate back to the 'main' route
     this.router.navigate(['/']);
+  }
+
+  atLeastOneCheckboxValidator(minRequired = 1) {
+    return function (formArray: FormArray) {
+      const totalChecked = formArray.controls
+        .map((control) => control.value)
+        .reduce((prev, next) => (next ? prev + 1 : prev), 0);
+      return totalChecked >= minRequired ? null : { requireOneCheckbox: true };
+    };
+  }
+
+  isTitleTooShort(): boolean {
+    const titleControl = this.updateDiscussionForm.get('title');
+    return (
+      titleControl.errors?.['minlength'] &&
+      titleControl.dirty &&
+      !titleControl.errors?.['required']
+    );
+  }
+
+  isTitleTooLong(): boolean {
+    const titleControl = this.updateDiscussionForm.get('title');
+    return titleControl.errors?.['maxlength'] && titleControl.dirty;
+  }
+
+  isTitleNotCapitalized(): boolean {
+    const titleControl = this.updateDiscussionForm.get('title');
+    return (
+      titleControl.errors?.['pattern'] &&
+      titleControl.dirty &&
+      !titleControl.errors?.['required']
+    );
+  }
+
+  isTitleInvalid(): boolean {
+    const titleControl = this.updateDiscussionForm.get('title');
+    return (
+      titleControl.errors?.['required'] &&
+      titleControl.dirty &&
+      titleControl.value.trim() === ''
+    );
+  }
+
+  isDescriptionTooShort(): boolean {
+    const descriptionControl = this.updateDiscussionForm.get('description');
+    return (
+      descriptionControl.errors?.['minlength'] &&
+      descriptionControl.dirty &&
+      !descriptionControl.errors?.['required']
+    );
+  }
+
+  isDescriptionTooLong(): boolean {
+    const descriptionControl = this.updateDiscussionForm.get('description');
+    return descriptionControl.errors?.['maxlength'] && descriptionControl.dirty;
+  }
+
+  isDescriptionNotCapitalized(): boolean {
+    const descriptionControl = this.updateDiscussionForm.get('description');
+    return (
+      descriptionControl.errors?.['pattern'] &&
+      descriptionControl.dirty &&
+      !descriptionControl.errors?.['required']
+    );
+  }
+
+  isDescriptionInvalid(): boolean {
+    const descriptionControl = this.updateDiscussionForm.get('description');
+    return (
+      descriptionControl.errors?.['required'] &&
+      descriptionControl.dirty &&
+      descriptionControl.value.trim() === ''
+    );
+  }
+
+  isDateInvalid(): boolean {
+    const dateControl = this.updateDiscussionForm.get('date');
+    return dateControl.invalid && dateControl.dirty;
+  }
+
+  isImageInvalid(): boolean {
+    const imgControl = this.updateDiscussionForm.get('img');
+    return imgControl.invalid && imgControl.dirty;
+  }
+
+  isNoneCheckboxChecked(): boolean {
+    const animeCheckboxesControl = this.updateDiscussionForm.get(
+      'animeCheckboxes'
+    ) as FormArray;
+    const checkedBoxes = animeCheckboxesControl.controls
+      .map((control) => control.value)
+      .some((isChecked) => isChecked);
+    return !checkedBoxes && animeCheckboxesControl.dirty;
+  }
+
+  isPriorityBelowMin(): boolean {
+    const priorityControl = this.updateDiscussionForm.get('priority');
+    return (
+      priorityControl.errors?.['min'] &&
+      priorityControl.dirty &&
+      !priorityControl.errors?.['required']
+    );
+  }
+
+  isPriorityAboveMax(): boolean {
+    const priorityControl = this.updateDiscussionForm.get('priority');
+    return priorityControl.errors?.['max'] && priorityControl.dirty;
   }
 }
