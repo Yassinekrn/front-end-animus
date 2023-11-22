@@ -30,6 +30,7 @@ import { UpdateAccComponent } from './components/user/update-acc/update-acc.comp
 import { AccountFormComponent } from './components/forms/account-form/account-form.component';
 import { HidepwdPipe } from './pipes/hidepwd.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreateDiscussionComponent } from './components/forms/create-discussion/create-discussion.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     UpdateAccComponent,
     AccountFormComponent,
     HidepwdPipe,
+    CreateDiscussionComponent,
   ],
   imports: [
     BrowserModule,
