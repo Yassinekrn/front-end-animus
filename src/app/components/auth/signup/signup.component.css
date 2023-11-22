@@ -4,3 +4,14 @@ img {
   margin-bottom: 20px;
   margin-left: 45%;
 }
+input.ng-invalid.ng-touched {
+  border-left: 6px solid red;
+}
+
+input.ng-valid.ng-touched {
+  border-left: 6px solid green;
+}
+
+input.ng-untouched {
+  border-left: 6px solid orange;
+}

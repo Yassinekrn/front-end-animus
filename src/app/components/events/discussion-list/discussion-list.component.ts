@@ -32,10 +32,11 @@ export class DiscussionListComponent implements OnInit {
   filterDiscussions() {
     this.filteredDiscussions = this.discussions.filter(
       (discussion) =>
-        discussion.title
+        (discussion.title
           .toLowerCase()
           .includes(this.searchTerm.toLowerCase()) &&
-        discussion.spoiler === this.spoiler
+          discussion.spoiler === this.spoiler) ||
+        discussion.spoiler === false
     );
   }
 

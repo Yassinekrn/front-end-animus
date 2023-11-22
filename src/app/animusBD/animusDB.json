@@ -942,7 +942,7 @@
     {
       "id": 8,
       "username": "david_m",
-      "password": "davidpass72",
+      "password": "davidpass73",
       "last_name": "Miller",
       "first_name": "David",
       "email": "david.miller@yandex.com",
@@ -968,6 +968,26 @@
       "email": "james.white@mail.com",
       "role": "admin",
       "join_date": "2023-01-15T06:35:51.420Z"
+    },
+    {
+      "last_name": "fgb",
+      "first_name": "zedae",
+      "email": "ada@zrgi.fe",
+      "password": "azertyuio",
+      "confirm_password": "azertyuio",
+      "role": "member",
+      "join_date": "2023-11-22T17:35:26.228Z",
+      "id": 11
+    },
+    {
+      "last_name": "fgb",
+      "first_name": "gfb",
+      "email": "stee@gmail.com",
+      "username": "damnson123",
+      "password": "123456",
+      "role": "member",
+      "join_date": "2023-11-22T17:52:14.738Z",
+      "id": 12
     }
   ],
   "animes": [

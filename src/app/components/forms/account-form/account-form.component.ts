@@ -6,6 +6,7 @@ import {
   ValidationErrors,
   Validators,
 } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Member } from 'src/app/classes/member/member';
 import { DataService } from 'src/app/services/data.service';
 
@@ -19,7 +20,8 @@ export class AccountFormComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private dataService: DataService
+    private dataService: DataService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -35,15 +37,20 @@ export class AccountFormComponent implements OnInit {
 
       return;
     }
+    // check wether the old password is correct
     let UpdatedMember: Member;
     const newPassword = this.changePasswordForm.get('newPassword').value;
     const userId = parseInt(localStorage.getItem('userId'));
     this.dataService.getMember(userId).subscribe((user) => {
       UpdatedMember = user;
+      if (user.password !== this.changePasswordForm.get('oldPassword').value) {
+        console.log('Old password is incorrect');
+        return;
+      }
       UpdatedMember.password = newPassword;
-
       this.dataService.updateMember(UpdatedMember).subscribe((user) => {
         console.log(user);
+        this.router.navigate(['/user']);
       });
     });
   }

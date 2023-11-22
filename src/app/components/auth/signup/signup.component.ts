@@ -7,6 +7,9 @@ import {
   AbstractControl,
   ValidationErrors,
 } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Member } from 'src/app/classes/member/member';
+import { DataService } from 'src/app/services/data.service';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -15,12 +18,17 @@ import {
 export class SignupComponent {
   myForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private dataService: DataService,
+    private router: Router
+  ) {
     this.myForm = this.fb.group(
       {
         last_name: ['', Validators.required],
         first_name: ['', Validators.required],
         email: ['', [Validators.required, Validators.email]],
+        username: ['', [Validators.required, Validators.minLength(5)]],
         password: ['', [Validators.required, Validators.minLength(5)]],
         confirm_password: ['', [Validators.required, Validators.minLength(5)]],
       },
@@ -51,11 +59,15 @@ export class SignupComponent {
       // Add new attributes
       formData.role = 'member';
       formData.join_date = new Date(); // Current date and time
+      // remove the confirm_password attribute
+      delete formData.confirm_password;
 
       // Now formData contains 'role' and 'join_date' in addition to the form fields
-      console.log(formData);
 
-      // Handle the form submission here
+      this.dataService.addMember(formData).subscribe((data) => {
+        console.log(data);
+        this.router.navigate(['/login']);
+      });
     }
   }
 }
