@@ -10,6 +10,7 @@ export class Discussion {
     public spoiler: boolean,
     public animes: Anime[],
     public participants: Member[],
-    public priority: number
+    public priority: number,
+    public img: string
   ) {}
 }

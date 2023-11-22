@@ -43,6 +43,14 @@ export class DiscussionUpdateComponent implements OnInit {
         this.discussion.date ? new Date(this.discussion.date) : new Date(),
         Validators.required,
       ],
+      img: [
+        this.discussion.img || '',
+        [
+          Validators.required,
+          Validators.pattern('(https?://.*.(?:png|jpg|jpeg))'),
+        ],
+      ],
+
       spoiler: [this.discussion.spoiler],
       priority: [
         this.discussion.priority,
@@ -88,6 +96,7 @@ export class DiscussionUpdateComponent implements OnInit {
       this.discussion.priority =
         this.updateDiscussionForm.get('priority').value;
       this.discussion.animes = updatedAnimes;
+      this.discussion.img = this.updateDiscussionForm.get('img').value;
 
       // Call the service to update the discussion using this.discussion
       this.dataS.updateDiscussion(this.discussion).subscribe((updatedData) => {
