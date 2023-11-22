@@ -69,7 +69,8 @@
           "join_date": "2023-01-15T06:35:51.420Z"
         }
       ],
-      "priority": 4
+      "priority": 4,
+      "img": "https://staticg.sportskeeda.com/editor/2023/05/d0ff2-16833578368203-1920.jpg"
     },
     {
       "id": 2,
@@ -120,7 +121,8 @@
           "join_date": "2023-05-03T12:25:19.654Z"
         }
       ],
-      "priority": 1
+      "priority": 1,
+      "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1a54ce51-fcc2-4139-9b86-22af94daa4fd/de94qob-8a608a46-8962-4f53-882f-2be3aaf4862d.png/v1/fill/w_958,h_834/100__full_cowl_deku_render__without_eri__by_ironoakstudios_de94qob-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA0MyIsInBhdGgiOiJcL2ZcLzFhNTRjZTUxLWZjYzItNDEzOS05Yjg2LTIyYWY5NGRhYTRmZFwvZGU5NHFvYi04YTYwOGE0Ni04OTYyLTRmNTMtODgyZi0yYmUzYWFmNDg2MmQucG5nIiwid2lkdGgiOiI8PTExOTkifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YVMI1R5znQZYhJ0aeCoKnOJTNsFlVlWVfENq6dDSDsQ"
     },
     {
       "id": 3,
@@ -191,7 +193,8 @@
           "join_date": "2023-10-30T23:10:26.987Z"
         }
       ],
-      "priority": 2
+      "priority": 2,
+      "img": "https://staticg.sportskeeda.com/editor/2022/06/08859-16552461982853-1920.jpg"
     },
     {
       "id": 4,
@@ -300,7 +303,8 @@
           "join_date": "2023-10-30T23:10:26.987Z"
         }
       ],
-      "priority": 1
+      "priority": 1,
+      "img": "https://m.media-amazon.com/images/I/61iPSBYmqTL._AC_SX679_.jpg"
     },
     {
       "id": 5,
@@ -361,7 +365,8 @@
           "join_date": "2023-01-15T06:35:51.420Z"
         }
       ],
-      "priority": 2
+      "priority": 2,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5939sgSxZX5RjcqayfLPW5jPpsWWFYskEWV1vOzLdZqK67GU6rBO3tI7971El84DIIRQ&usqp=CAU"
     },
     {
       "id": 6,
@@ -422,7 +427,8 @@
           "join_date": "2023-05-03T12:25:19.654Z"
         }
       ],
-      "priority": 3
+      "priority": 3,
+      "img": "https://i.ebayimg.com/00/s/NDY0WDY1MA==/z/eaUAAOSwml5jNvhG/$_12.JPG?set_id=880000500F"
     },
     {
       "id": 7,
@@ -552,7 +558,8 @@
           "join_date": "2023-01-15T06:35:51.420Z"
         }
       ],
-      "priority": 4
+      "priority": 4,
+      "img": "https://qph.cf2.quoracdn.net/main-qimg-f72cb5dc52225faec5749673e266b8fb"
     },
     {
       "id": 8,
@@ -643,7 +650,8 @@
           "join_date": "2023-01-15T06:35:51.420Z"
         }
       ],
-      "priority": 3
+      "priority": 3,
+      "img": "https://qph.cf2.quoracdn.net/main-qimg-4b1aeaa82c6cc2f7dd5efdcb0ee36a5b-lq"
     },
     {
       "id": 9,
@@ -733,7 +741,8 @@
           "join_date": "2023-10-30T23:10:26.987Z"
         }
       ],
-      "priority": 5
+      "priority": 5,
+      "img": "https://static.wikia.nocookie.net/deathbattlefanon/images/4/4c/Gotama.jpg/revision/latest?cb=20160712190027"
     },
     {
       "id": 10,
@@ -814,7 +823,8 @@
           "join_date": "2023-01-15T06:35:51.420Z"
         }
       ],
-      "priority": 5
+      "priority": 5,
+      "img": "https://i.ytimg.com/vi/NO7C7bU7mu0/maxresdefault.jpg"
     }
   ],
   "members": [
@@ -891,7 +901,7 @@
     {
       "id": 8,
       "username": "david_m",
-      "password": "davidpass71",
+      "password": "davidpass73",
       "last_name": "Miller",
       "first_name": "David",
       "email": "david.miller@yandex.com",
@@ -917,6 +927,26 @@
       "email": "james.white@mail.com",
       "role": "admin",
       "join_date": "2023-01-15T06:35:51.420Z"
+    },
+    {
+      "last_name": "fgb",
+      "first_name": "zedae",
+      "email": "ada@zrgi.fe",
+      "password": "azertyuio",
+      "confirm_password": "azertyuio",
+      "role": "member",
+      "join_date": "2023-11-22T17:35:26.228Z",
+      "id": 11
+    },
+    {
+      "last_name": "fgb",
+      "first_name": "gfb",
+      "email": "stee@gmail.com",
+      "username": "damnson123",
+      "password": "123456",
+      "role": "member",
+      "join_date": "2023-11-22T17:52:14.738Z",
+      "id": 12
     }
   ],
   "animes": [
