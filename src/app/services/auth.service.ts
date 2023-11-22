@@ -30,7 +30,7 @@ export class AuthService {
   logout() {
     localStorage.removeItem('userRole');
     localStorage.removeItem('userId');
-    //TODO: redirect to login page
+
     // this.router.navigate(['/login']);
   }
 

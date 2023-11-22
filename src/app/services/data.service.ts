@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 import { Anime } from '../classes/anime/anime';
 import { Member } from '../classes/member/member';
 import { Discussion } from '../classes/discussion/discussion';
+import { forkJoin } from 'rxjs';
+import { map, switchMap } from 'rxjs/operators'; // Add this import statement
 
 @Injectable({
   providedIn: 'root',
@@ -76,8 +78,38 @@ export class DataService {
     // the update works only on the password so I don't need to update on cascade
   }
 
+  deleteMemberFromDiscussion(id_member: number): Observable<any> {
+    return this.getDiscussions().pipe(
+      switchMap((discussions) => {
+        const updateObservables = discussions
+          .filter((discussion) =>
+            discussion.participants.some((p) => p.id === id_member)
+          )
+          .map((discussion) => {
+            const updatedDiscussion = { ...discussion };
+            updatedDiscussion.participants =
+              updatedDiscussion.participants.filter(
+                (participant) => participant.id !== id_member
+              );
+            return this.updateDiscussion(updatedDiscussion);
+          });
+
+        return forkJoin(updateObservables);
+      })
+    );
+  }
+
   deleteMember(id: number): Observable<Member> {
-    return this.http.delete<Member>(`${this.memberUrl}/${id}`);
+    return forkJoin([
+      this.deleteMemberFromDiscussion(id),
+      this.http.delete<Member>(`${this.memberUrl}/${id}`),
+    ]).pipe(
+      map(([discussionsUpdateResponse, memberDeleteResponse]) => {
+        // Assuming you need to return something after both operations are complete
+        console.log('Member and discussions deleted successfully');
+        return memberDeleteResponse;
+      })
+    );
   }
   //TODO: look for way to delete member on cascade
 
