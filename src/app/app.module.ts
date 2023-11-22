@@ -29,6 +29,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UpdateAccComponent } from './components/user/update-acc/update-acc.component';
 import { AccountFormComponent } from './components/forms/account-form/account-form.component';
 import { HidepwdPipe } from './pipes/hidepwd.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { HidepwdPipe } from './pipes/hidepwd.pipe';
     MatButtonModule,
     HttpClientModule,
     NgbModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
