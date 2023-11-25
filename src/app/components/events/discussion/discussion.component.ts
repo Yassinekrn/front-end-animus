@@ -44,6 +44,6 @@ export class DiscussionComponent implements OnInit {
 
   updateDiscussion(discussionID: number) {
     // Navigate to the 'update' route and pass the discussion ID as a parameter
-    this.router.navigate(['/update', discussionID]);
+    this.router.navigate(['/update_disc', discussionID]);
   }
 }

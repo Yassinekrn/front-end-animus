@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Attack on Titan : The End",
       "description": "This discussion delves into the finale of Attack on Titan, focusing on the conclusion of the series, key plot developments, character arcs, and the overall impact of the ending on fans and the anime community.",
-      "date": "2023-12-06T14:30:00.000Z",
+      "date": "2023-12-06",
       "spoiler": true,
       "animes": [
         {
@@ -12,7 +12,11 @@
           "title": "Attack on Titan",
           "description": "In a world where humanity is on the brink of extinction due to giant humanoid creatures known as Titans, a group of young soldiers fights for survival within enormous walled cities. The story unfolds as they discover the truth behind the Titans and embark on a mission to reclaim their world.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/d/d6/Shingeki_no_Kyojin_manga_volume_1.jpg",
-          "tags": ["Action", "Dark fantasy", "Post-apocalyptic"],
+          "tags": [
+            "Action",
+            "Dark fantasy",
+            "Post-apocalyptic"
+          ],
           "upvotes": 27,
           "downvotes": 1
         }
@@ -75,8 +79,8 @@
     {
       "id": 2,
       "title": "Does Deku deserve one for all?",
-      "description": " In the context of My Hero Academia, this topic explores whether the main character, Izuku Midoriya (Deku), truly deserves to inherit the powerful Quirk known as One for All, considering his journey, character growth, and actions throughout the series.",
-      "date": "2023-12-09T14:30:00.000Z",
+      "description": "In the context of My Hero Academia, this topic explores whether the main character, Izuku Midoriya (Deku), truly deserves to inherit the powerful Quirk known as One for All, considering his journey, character growth, and actions throughout the series.",
+      "date": "2023-12-09",
       "spoiler": false,
       "animes": [
         {
@@ -84,7 +88,11 @@
           "title": "My Hero Academia",
           "description": "In a world where people possess superpowers known as 'Quirks', a young boy named Izuku Midoriya aims to become a hero despite being born without any Quirk. He enrolls in a prestigious hero academy and faces numerous challenges.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/5/5a/Boku_no_Hero_Academia_Volume_1.png",
-          "tags": ["Adventure", "Science fantasy", "Superhero"],
+          "tags": [
+            "Adventure",
+            "Science fantasy",
+            "Superhero"
+          ],
           "upvotes": 21,
           "downvotes": 6
         }
@@ -128,7 +136,7 @@
       "id": 3,
       "title": "Sailor Moon and it's effect on shoujo manga",
       "description": "This discussion highlights the influence and significance of the iconic magical girl series Sailor Moon on the shoujo manga genre, its role in shaping the portrayal of female protagonists, and its impact on subsequent works.",
-      "date": "2023-12-10T14:30:00.000Z",
+      "date": "2023-12-10",
       "spoiler": false,
       "animes": [
         {
@@ -136,7 +144,9 @@
           "title": "Sailor Moon",
           "description": "Usagi Tsukino discovers she is the reincarnation of Sailor Moon, a guardian destined to protect the world from evil forces. Along with her Sailor Guardians, she battles villains and uncovers her true destiny",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e5/SMVolume1.jpg",
-          "tags": ["Magical girl"],
+          "tags": [
+            "Magical girl"
+          ],
           "upvotes": 20,
           "downvotes": 7
         }
@@ -200,7 +210,7 @@
       "id": 4,
       "title": "Is Dragon Ball part of the big 3?",
       "description": "This topic debates whether Dragon Ball, alongside Naruto and One Piece, deserves recognition as part of the Big 3 in the world of shonen anime and manga and the factors contributing to this designation.",
-      "date": "2023-12-14T14:30:00.000Z",
+      "date": "2023-12-14",
       "spoiler": false,
       "animes": [
         {
@@ -208,7 +218,10 @@
           "title": "One Piece",
           "description": "This long-running adventure follows Monkey D. Luffy and his pirate crew in their quest to find the ultimate treasure, the One Piece. Along the way, they encounter various islands, adversaries, and supernatural powers in a world of high-seas adventures.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg",
-          "tags": ["Adventure", "Science fantasy"],
+          "tags": [
+            "Adventure",
+            "Science fantasy"
+          ],
           "upvotes": 47,
           "downvotes": 1
         },
@@ -217,7 +230,11 @@
           "title": "Naruto",
           "description": "Follow the journey of Naruto Uzumaki, a young ninja with dreams of becoming the Hokage and earning the respect of his village. The series explores themes of friendship, perseverance, and the pursuit of one's goals.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg",
-          "tags": ["Adventure", "Fantasy comedy", "Martial arts"],
+          "tags": [
+            "Adventure",
+            "Fantasy comedy",
+            "Martial arts"
+          ],
           "upvotes": 27,
           "downvotes": 7
         },
@@ -226,7 +243,11 @@
           "title": "Dragon Ball Z",
           "description": "The sequel to the original Dragon Ball series, DBZ continues the adventures of Goku as he defends Earth from powerful foes, travels to distant planets, and harnesses the power of the Dragon Balls.",
           "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/DBZ_Logo.png/330px-DBZ_Logo.png",
-          "tags": ["Adventure", "Fantasy", "Martial arts"],
+          "tags": [
+            "Adventure",
+            "Fantasy",
+            "Martial arts"
+          ],
           "upvotes": 47,
           "downvotes": 2
         }
@@ -310,7 +331,7 @@
       "id": 5,
       "title": "Why is Hikigaya Hachiman so relatable to teenage boys?",
       "description": "Focusing on the character Hachiman Hikigaya from My Youth Romantic Comedy Is Wrong, As I Expected (Oregairu), this discussion explores the qualities and experiences that make Hachiman a relatable figure to adolescent males.",
-      "date": "2023-12-16T14:30:00.000Z",
+      "date": "2023-12-16",
       "spoiler": false,
       "animes": [
         {
@@ -318,7 +339,10 @@
           "title": "Oregairu",
           "description": "This series follows the life of Hachiman Hikigaya, a high school student with a pessimistic outlook on life. He is reluctantly involved in a service club where he navigates the complexities of human relationships and emotions.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/My_Teen_Romantic_Comedy_SNAFU_cover.jpg",
-          "tags": ["Romantic comedy", "Slice of life"],
+          "tags": [
+            "Romantic comedy",
+            "Slice of life"
+          ],
           "upvotes": 10,
           "downvotes": 2
         }
@@ -372,7 +396,7 @@
       "id": 6,
       "title": "Is one-punch man good despite the fact that it's a comedy or because of it?",
       "description": "This topic examines the strengths and appeal of One-Punch Man, considering its unique blend of humor and action, and whether the comedy enhances or detracts from the overall quality of the series.",
-      "date": "2023-12-17T14:30:00.000Z",
+      "date": "2023-12-17",
       "spoiler": false,
       "animes": [
         {
@@ -380,7 +404,11 @@
           "title": "One-Punch Man",
           "description": " Saitama, a superhero for fun, can defeat any opponent with a single punch. However, his overwhelming strength leaves him feeling bored and unfulfilled as he searches for a worthy adversary.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/OnePunchMan_manga_cover.png",
-          "tags": ["Action", "Comedy", "Superhero"],
+          "tags": [
+            "Action",
+            "Comedy",
+            "Superhero"
+          ],
           "upvotes": 33,
           "downvotes": 5
         }
@@ -434,7 +462,7 @@
       "id": 7,
       "title": "Cursed Spirits VS Demons",
       "description": "In the context of Jujutsu Kaisen and Demon Slayer, this discussion compares and contrasts cursed spirits and demons, exploring their characteristics, roles, and significance within their respective series.",
-      "date": "2023-12-21T14:30:00.000Z",
+      "date": "2023-12-21",
       "spoiler": false,
       "animes": [
         {
@@ -442,7 +470,11 @@
           "title": "Demon Slayer",
           "description": "A young boy, Tanjiro Kamado, becomes a demon slayer after his family is slaughtered by demons, and his sister is turned into one. The series chronicles his journey to avenge his family and cure his sister while battling powerful demons.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/0/09/Demon_Slayer_-_Kimetsu_no_Yaiba%2C_volume_1.jpg",
-          "tags": ["Adventure", "Dark fantasy", "Martial arts"],
+          "tags": [
+            "Adventure",
+            "Dark fantasy",
+            "Martial arts"
+          ],
           "upvotes": 44,
           "downvotes": 5
         },
@@ -451,7 +483,11 @@
           "title": "Jujutsu Kaisen",
           "description": "When high school student Yuji Itadori discovers a cursed talisman containing a malevolent curse, he becomes entangled in the world of curses and Jujutsu sorcerers. He joins a group of sorcerers in their battle against curses.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg",
-          "tags": ["Adventure", "Dark fantasy", "Supernatural"],
+          "tags": [
+            "Adventure",
+            "Dark fantasy",
+            "Supernatural"
+          ],
           "upvotes": 16,
           "downvotes": 4
         }
@@ -565,7 +601,7 @@
       "id": 8,
       "title": "Eren Yeager: A Hero, A Villain, An AntiHero",
       "description": "This discussion focuses on the character arc of Eren Yeager in Attack on Titan, exploring how he transitions from a hero to an anti-hero and ultimately takes on the role of the villain as the series progresses. It delves into the character's development and motivations during this transformation.",
-      "date": "2023-12-23T14:30:00.000Z",
+      "date": "2023-12-23",
       "spoiler": true,
       "animes": [
         {
@@ -573,7 +609,11 @@
           "title": "Attack on Titan",
           "description": "In a world where humanity is on the brink of extinction due to giant humanoid creatures known as Titans, a group of young soldiers fights for survival within enormous walled cities. The story unfolds as they discover the truth behind the Titans and embark on a mission to reclaim their world.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/d/d6/Shingeki_no_Kyojin_manga_volume_1.jpg",
-          "tags": ["Action", "Dark fantasy", "Post-apocalyptic"],
+          "tags": [
+            "Action",
+            "Dark fantasy",
+            "Post-apocalyptic"
+          ],
           "upvotes": 27,
           "downvotes": 1
         }
@@ -657,7 +697,7 @@
       "id": 9,
       "title": "Saitama VS Goku : A Battle Of The Strongest ",
       "description": "This hypothetical battle discussion pits Saitama from One-Punch Man against Goku from Dragon Ball in a debate about who would win in a showdown, considering their respective powers and characteristics.",
-      "date": "2023-12-24T14:30:00.000Z",
+      "date": "2023-12-24",
       "spoiler": false,
       "animes": [
         {
@@ -665,7 +705,11 @@
           "title": "Dragon Ball Z",
           "description": "The sequel to the original Dragon Ball series, DBZ continues the adventures of Goku as he defends Earth from powerful foes, travels to distant planets, and harnesses the power of the Dragon Balls.",
           "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/DBZ_Logo.png/330px-DBZ_Logo.png",
-          "tags": ["Adventure", "Fantasy", "Martial arts"],
+          "tags": [
+            "Adventure",
+            "Fantasy",
+            "Martial arts"
+          ],
           "upvotes": 47,
           "downvotes": 2
         },
@@ -674,7 +718,11 @@
           "title": "One-Punch Man",
           "description": " Saitama, a superhero for fun, can defeat any opponent with a single punch. However, his overwhelming strength leaves him feeling bored and unfulfilled as he searches for a worthy adversary.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/OnePunchMan_manga_cover.png",
-          "tags": ["Action", "Comedy", "Superhero"],
+          "tags": [
+            "Action",
+            "Comedy",
+            "Superhero"
+          ],
           "upvotes": 33,
           "downvotes": 5
         }
@@ -748,7 +796,7 @@
       "id": 10,
       "title": "Who is JoyBoy?",
       "description": "This topic explores the mystery of JoyBoy, a enigmatic figure from the world of One Piece, discussing various fan theories, clues, and speculations surrounding his identity and significance within the series.",
-      "date": "2023-12-28T14:30:00.000Z",
+      "date": "2023-12-28",
       "spoiler": true,
       "animes": [
         {
@@ -756,7 +804,10 @@
           "title": "One Piece",
           "description": "This long-running adventure follows Monkey D. Luffy and his pirate crew in their quest to find the ultimate treasure, the One Piece. Along the way, they encounter various islands, adversaries, and supernatural powers in a world of high-seas adventures.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg",
-          "tags": ["Adventure", "Science fantasy"],
+          "tags": [
+            "Adventure",
+            "Science fantasy"
+          ],
           "upvotes": 47,
           "downvotes": 1
         }
@@ -955,7 +1006,11 @@
       "title": "Attack on Titan",
       "description": "In a world where humanity is on the brink of extinction due to giant humanoid creatures known as Titans, a group of young soldiers fights for survival within enormous walled cities. The story unfolds as they discover the truth behind the Titans and embark on a mission to reclaim their world.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/d/d6/Shingeki_no_Kyojin_manga_volume_1.jpg",
-      "tags": ["Action", "Dark fantasy", "Post-apocalyptic"],
+      "tags": [
+        "Action",
+        "Dark fantasy",
+        "Post-apocalyptic"
+      ],
       "upvotes": 27,
       "downvotes": 1
     },
@@ -964,7 +1019,10 @@
       "title": "One Piece",
       "description": "This long-running adventure follows Monkey D. Luffy and his pirate crew in their quest to find the ultimate treasure, the One Piece. Along the way, they encounter various islands, adversaries, and supernatural powers in a world of high-seas adventures.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg",
-      "tags": ["Adventure", "Science fantasy"],
+      "tags": [
+        "Adventure",
+        "Science fantasy"
+      ],
       "upvotes": 47,
       "downvotes": 1
     },
@@ -973,7 +1031,11 @@
       "title": "Demon Slayer",
       "description": "A young boy, Tanjiro Kamado, becomes a demon slayer after his family is slaughtered by demons, and his sister is turned into one. The series chronicles his journey to avenge his family and cure his sister while battling powerful demons.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/0/09/Demon_Slayer_-_Kimetsu_no_Yaiba%2C_volume_1.jpg",
-      "tags": ["Adventure", "Dark fantasy", "Martial arts"],
+      "tags": [
+        "Adventure",
+        "Dark fantasy",
+        "Martial arts"
+      ],
       "upvotes": 44,
       "downvotes": 5
     },
@@ -982,7 +1044,11 @@
       "title": "My Hero Academia",
       "description": "In a world where people possess superpowers known as 'Quirks', a young boy named Izuku Midoriya aims to become a hero despite being born without any Quirk. He enrolls in a prestigious hero academy and faces numerous challenges.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/5/5a/Boku_no_Hero_Academia_Volume_1.png",
-      "tags": ["Adventure", "Science fantasy", "Superhero"],
+      "tags": [
+        "Adventure",
+        "Science fantasy",
+        "Superhero"
+      ],
       "upvotes": 21,
       "downvotes": 6
     },
@@ -991,7 +1057,11 @@
       "title": "Jujutsu Kaisen",
       "description": "When high school student Yuji Itadori discovers a cursed talisman containing a malevolent curse, he becomes entangled in the world of curses and Jujutsu sorcerers. He joins a group of sorcerers in their battle against curses.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg",
-      "tags": ["Adventure", "Dark fantasy", "Supernatural"],
+      "tags": [
+        "Adventure",
+        "Dark fantasy",
+        "Supernatural"
+      ],
       "upvotes": 16,
       "downvotes": 4
     },
@@ -1000,7 +1070,11 @@
       "title": "Naruto",
       "description": "Follow the journey of Naruto Uzumaki, a young ninja with dreams of becoming the Hokage and earning the respect of his village. The series explores themes of friendship, perseverance, and the pursuit of one's goals.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg",
-      "tags": ["Adventure", "Fantasy comedy", "Martial arts"],
+      "tags": [
+        "Adventure",
+        "Fantasy comedy",
+        "Martial arts"
+      ],
       "upvotes": 27,
       "downvotes": 7
     },
@@ -1009,7 +1083,11 @@
       "title": "Dragon Ball Z",
       "description": "The sequel to the original Dragon Ball series, DBZ continues the adventures of Goku as he defends Earth from powerful foes, travels to distant planets, and harnesses the power of the Dragon Balls.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/DBZ_Logo.png/330px-DBZ_Logo.png",
-      "tags": ["Adventure", "Fantasy", "Martial arts"],
+      "tags": [
+        "Adventure",
+        "Fantasy",
+        "Martial arts"
+      ],
       "upvotes": 47,
       "downvotes": 2
     },
@@ -1018,7 +1096,10 @@
       "title": "Oregairu",
       "description": "This series follows the life of Hachiman Hikigaya, a high school student with a pessimistic outlook on life. He is reluctantly involved in a service club where he navigates the complexities of human relationships and emotions.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/My_Teen_Romantic_Comedy_SNAFU_cover.jpg",
-      "tags": ["Romantic comedy", "Slice of life"],
+      "tags": [
+        "Romantic comedy",
+        "Slice of life"
+      ],
       "upvotes": 10,
       "downvotes": 2
     },
@@ -1027,7 +1108,11 @@
       "title": "One-Punch Man",
       "description": " Saitama, a superhero for fun, can defeat any opponent with a single punch. However, his overwhelming strength leaves him feeling bored and unfulfilled as he searches for a worthy adversary.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/OnePunchMan_manga_cover.png",
-      "tags": ["Action", "Comedy", "Superhero"],
+      "tags": [
+        "Action",
+        "Comedy",
+        "Superhero"
+      ],
       "upvotes": 33,
       "downvotes": 5
     },
@@ -1036,7 +1121,9 @@
       "title": "Sailor Moon",
       "description": "Usagi Tsukino discovers she is the reincarnation of Sailor Moon, a guardian destined to protect the world from evil forces. Along with her Sailor Guardians, she battles villains and uncovers her true destiny",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e5/SMVolume1.jpg",
-      "tags": ["Magical girl"],
+      "tags": [
+        "Magical girl"
+      ],
       "upvotes": 20,
       "downvotes": 7
     }

@@ -43,7 +43,7 @@ export class DiscussionUpdateComponent implements OnInit {
           Validators.required,
           Validators.pattern('^[A-Z].*'),
           Validators.minLength(5),
-          Validators.maxLength(50),
+          Validators.maxLength(100),
         ],
       ],
       description: [
@@ -51,19 +51,21 @@ export class DiscussionUpdateComponent implements OnInit {
         [
           Validators.required,
           Validators.pattern('^[A-Z].*'),
-          Validators.minLength(50),
+          Validators.minLength(100),
           Validators.maxLength(500),
         ],
       ],
       date: [
-        this.discussion.date ? new Date(this.discussion.date) : new Date(),
+        new Date(this.discussion.date).toISOString().substring(0, 10),
         Validators.required,
       ],
       img: [
         this.discussion.img || '',
         [
           Validators.required,
-          Validators.pattern('^(https?://.*\\.(?:png|jpg|jpeg))'),
+          Validators.pattern(
+            '^(https?|ftp):\\/\\/[^\\s\\/$.?#].[^\\s]*\\.(jpg|jpeg|png)(\\?.*)?$'
+          ),
         ],
       ],
 
@@ -236,5 +238,17 @@ export class DiscussionUpdateComponent implements OnInit {
   isPriorityAboveMax(): boolean {
     const priorityControl = this.updateDiscussionForm.get('priority');
     return priorityControl.errors?.['max'] && priorityControl.dirty;
+  }
+
+  toggleSpoilerIcon(): void {
+    const spoiler = document.getElementById('spoiler') as HTMLInputElement;
+    const spoilerIcon = document.querySelector('.form-check-label i');
+    if (spoiler.checked) {
+      spoilerIcon.classList.remove('fa-eye');
+      spoilerIcon.classList.add('fa-eye-slash');
+    } else {
+      spoilerIcon.classList.remove('fa-eye-slash');
+      spoilerIcon.classList.add('fa-eye');
+    }
   }
 }

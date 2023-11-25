@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Discussion } from 'src/app/classes/discussion/discussion';
 import { DataService } from 'src/app/services/data.service';
 
@@ -14,13 +15,14 @@ export class DiscussionListComponent implements OnInit {
   showEditDeleteButton: boolean = false;
   searchTerm: string = ''; // Track the search term
   spoiler: boolean = true; // so that it is not checked by default
-
-  constructor(private dataService: DataService) {}
+  userRole: string = '';
+  constructor(private dataService: DataService, private router: Router) {}
 
   ngOnInit() {
-    const userRole = localStorage.getItem('userRole');
-    this.showJoinLeaveButton = userRole === 'member' || userRole === 'admin';
-    this.showEditDeleteButton = userRole === 'admin';
+    this.userRole = localStorage.getItem('userRole');
+    this.showJoinLeaveButton =
+      this.userRole === 'member' || this.userRole === 'admin';
+    this.showEditDeleteButton = this.userRole === 'admin';
 
     this.dataService.getDiscussions().subscribe((data) => {
       this.discussions = data;

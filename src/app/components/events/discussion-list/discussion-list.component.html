@@ -3,6 +3,7 @@
     {{ "Discover the latest discussions" | titlecase }}
   </h2>
   <hr />
+
   <fieldset class="text-center mt-3">
     <div class="input-group">
       <input
@@ -30,7 +31,14 @@
     </div>
     <br />
   </fieldset>
-
+  <button
+    *ngIf="userRole == 'admin'"
+    class="btn btn-primary ml-5 text-center"
+    routerLink="/create_disc"
+  >
+    <i class="fas fa-circle-plus"></i>
+    Discussion
+  </button>
   <app-discussion
     *ngFor="let discussion of filteredDiscussions"
     [discussion]="discussion"

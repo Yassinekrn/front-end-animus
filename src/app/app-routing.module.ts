@@ -13,6 +13,7 @@ import { authGuard } from './guards/auth.guard';
 import { AccountsComponent } from './components/private/accounts/accounts.component';
 import { UpdateAccComponent } from './components/user/update-acc/update-acc.component';
 import { AccountFormComponent } from './components/forms/account-form/account-form.component';
+import { CreateDiscussionComponent } from './components/forms/create-discussion/create-discussion.component';
 
 /* 
 defaults to home page /home
@@ -71,9 +72,14 @@ const routes: Routes = [
     ],
   },
   {
-    path: 'update/:id',
+    path: 'update_disc/:id',
     title: 'Update Discussion',
     component: DiscussionUpdateComponent,
+  },
+  {
+    path: 'create_disc',
+    title: 'Create Discussion',
+    component: CreateDiscussionComponent,
   },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
