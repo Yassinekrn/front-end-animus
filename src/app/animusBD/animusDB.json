@@ -43,16 +43,6 @@
           "join_date": "2023-02-28T14:05:45.567Z"
         },
         {
-          "id": 9,
-          "username": "emma_j",
-          "password": "emmapass29",
-          "last_name": "Jackson",
-          "first_name": "Emma",
-          "email": "emma.jackson@rediffmail.com",
-          "role": "admin",
-          "join_date": "2023-10-30T23:10:26.987Z"
-        },
-        {
           "id": 10,
           "username": "james_w",
           "password": "jamespass83",
@@ -61,6 +51,16 @@
           "email": "james.white@mail.com",
           "role": "admin",
           "join_date": "2023-01-15T06:35:51.420Z"
+        },
+        {
+          "id": 9,
+          "username": "emma_j",
+          "password": "emmapass29",
+          "last_name": "Jackson",
+          "first_name": "Emma",
+          "email": "emma.jackson@rediffmail.com",
+          "role": "admin",
+          "join_date": "2023-10-30T23:10:26.987Z"
         }
       ],
       "priority": 4,
