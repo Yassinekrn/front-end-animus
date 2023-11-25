@@ -24,10 +24,11 @@ export class AccountsComponent implements OnInit {
   }
 
   deleteMember() {
-    this.dataService.deleteMember(this.memberIdToDelete).subscribe((data) => {
-      this.members = this.members.filter(
-        (member) => member.id != this.memberIdToDelete
-      );
+    this.dataService.deleteMember(this.memberIdToDelete).subscribe(() => {
+      console.log('Member deleted successfully\n');
+      this.members = this.members.filter((member) => {
+        return member.id !== this.memberIdToDelete;
+      });
     });
   }
 

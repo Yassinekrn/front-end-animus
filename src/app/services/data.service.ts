@@ -1,11 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable, of, throwError } from 'rxjs';
 import { Anime } from '../classes/anime/anime';
 import { Member } from '../classes/member/member';
 import { Discussion } from '../classes/discussion/discussion';
 import { forkJoin } from 'rxjs';
-import { map, switchMap } from 'rxjs/operators'; // Add this import statement
+import { map, switchMap, catchError } from 'rxjs/operators'; // Add this import statement
 
 @Injectable({
   providedIn: 'root',
@@ -78,7 +78,7 @@ export class DataService {
     // the update works only on the password so I don't need to update on cascade
   }
 
-  deleteMemberFromDiscussion(id_member: number): Observable<any> {
+  /* deleteMemberFromDiscussion(id_member: number): Observable<any> {
     return this.getDiscussions().pipe(
       switchMap((discussions) => {
         const updateObservables = discussions
@@ -108,6 +108,56 @@ export class DataService {
         // Assuming you need to return something after both operations are complete
         console.log('Member and discussions deleted successfully');
         return memberDeleteResponse;
+      })
+    );
+  } */
+  deleteMemberFromDiscussion(id_member: number): Observable<boolean> {
+    return this.getDiscussions().pipe(
+      switchMap((discussions) => {
+        const discussionsToDelete = discussions.filter((discussion) =>
+          discussion.participants.some((p) => p.id === id_member)
+        );
+
+        if (discussionsToDelete.length === 0) {
+          return of(true); // No discussions to delete
+        }
+
+        const deleteDiscussion = (index: number): Observable<boolean> => {
+          if (index === discussionsToDelete.length) {
+            return of(true); // All discussions deleted
+          }
+
+          const discussion = discussionsToDelete[index];
+          const updatedDiscussion = { ...discussion };
+          updatedDiscussion.participants =
+            updatedDiscussion.participants.filter(
+              (participant) => participant.id !== id_member
+            );
+
+          return this.updateDiscussion(updatedDiscussion).pipe(
+            switchMap(() => deleteDiscussion(index + 1)),
+            catchError(() =>
+              throwError(new Error('Failed to delete member from discussion'))
+            )
+          );
+        };
+
+        return deleteDiscussion(0);
+      }),
+      catchError((error) => {
+        console.error('Error in deleteMemberFromDiscussion:', error);
+        return throwError(
+          () => new Error('Failed to delete member from discussion')
+        );
+      })
+    );
+  }
+
+  deleteMember(id: number): Observable<Member> {
+    return this.deleteMemberFromDiscussion(id).pipe(
+      switchMap((data) => {
+        console.log('Member removed from discussions successfully\n' + data);
+        return this.http.delete<Member>(`${this.memberUrl}/${id}`);
       })
     );
   }

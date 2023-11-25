@@ -12,16 +12,22 @@
           "title": "Attack on Titan",
           "description": "In a world where humanity is on the brink of extinction due to giant humanoid creatures known as Titans, a group of young soldiers fights for survival within enormous walled cities. The story unfolds as they discover the truth behind the Titans and embark on a mission to reclaim their world.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/d/d6/Shingeki_no_Kyojin_manga_volume_1.jpg",
-          "tags": [
-            "Action",
-            "Dark fantasy",
-            "Post-apocalyptic"
-          ],
+          "tags": ["Action", "Dark fantasy", "Post-apocalyptic"],
           "upvotes": 27,
           "downvotes": 1
         }
       ],
       "participants": [
+        {
+          "id": 1,
+          "username": "sarah_j",
+          "password": "sarahpass",
+          "last_name": "Johnson",
+          "first_name": "Sarah",
+          "email": "sarah.johnson@gmail.com",
+          "role": "member",
+          "join_date": "2023-04-21T08:15:42.123Z"
+        },
         {
           "id": 2,
           "username": "mike_s",
@@ -63,8 +69,7 @@
           "join_date": "2023-10-30T23:10:26.987Z"
         }
       ],
-      "priority": 4,
-      "img": "https://staticg.sportskeeda.com/editor/2023/05/d0ff2-16833578368203-1920.jpg"
+      "priority": 4
     },
     {
       "id": 2,
@@ -78,11 +83,7 @@
           "title": "My Hero Academia",
           "description": "In a world where people possess superpowers known as 'Quirks', a young boy named Izuku Midoriya aims to become a hero despite being born without any Quirk. He enrolls in a prestigious hero academy and faces numerous challenges.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/5/5a/Boku_no_Hero_Academia_Volume_1.png",
-          "tags": [
-            "Adventure",
-            "Science fantasy",
-            "Superhero"
-          ],
+          "tags": ["Adventure", "Science fantasy", "Superhero"],
           "upvotes": 21,
           "downvotes": 6
         }
@@ -119,8 +120,7 @@
           "join_date": "2023-05-03T12:25:19.654Z"
         }
       ],
-      "priority": 1,
-      "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1a54ce51-fcc2-4139-9b86-22af94daa4fd/de94qob-8a608a46-8962-4f53-882f-2be3aaf4862d.png/v1/fill/w_958,h_834/100__full_cowl_deku_render__without_eri__by_ironoakstudios_de94qob-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA0MyIsInBhdGgiOiJcL2ZcLzFhNTRjZTUxLWZjYzItNDEzOS05Yjg2LTIyYWY5NGRhYTRmZFwvZGU5NHFvYi04YTYwOGE0Ni04OTYyLTRmNTMtODgyZi0yYmUzYWFmNDg2MmQucG5nIiwid2lkdGgiOiI8PTExOTkifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YVMI1R5znQZYhJ0aeCoKnOJTNsFlVlWVfENq6dDSDsQ"
+      "priority": 1
     },
     {
       "id": 3,
@@ -134,9 +134,7 @@
           "title": "Sailor Moon",
           "description": "Usagi Tsukino discovers she is the reincarnation of Sailor Moon, a guardian destined to protect the world from evil forces. Along with her Sailor Guardians, she battles villains and uncovers her true destiny",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e5/SMVolume1.jpg",
-          "tags": [
-            "Magical girl"
-          ],
+          "tags": ["Magical girl"],
           "upvotes": 20,
           "downvotes": 7
         }
@@ -193,8 +191,7 @@
           "join_date": "2023-10-30T23:10:26.987Z"
         }
       ],
-      "priority": 2,
-      "img": "https://staticg.sportskeeda.com/editor/2022/06/08859-16552461982853-1920.jpg"
+      "priority": 2
     },
     {
       "id": 4,
@@ -208,10 +205,7 @@
           "title": "One Piece",
           "description": "This long-running adventure follows Monkey D. Luffy and his pirate crew in their quest to find the ultimate treasure, the One Piece. Along the way, they encounter various islands, adversaries, and supernatural powers in a world of high-seas adventures.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg",
-          "tags": [
-            "Adventure",
-            "Science fantasy"
-          ],
+          "tags": ["Adventure", "Science fantasy"],
           "upvotes": 47,
           "downvotes": 1
         },
@@ -220,11 +214,7 @@
           "title": "Naruto",
           "description": "Follow the journey of Naruto Uzumaki, a young ninja with dreams of becoming the Hokage and earning the respect of his village. The series explores themes of friendship, perseverance, and the pursuit of one's goals.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg",
-          "tags": [
-            "Adventure",
-            "Fantasy comedy",
-            "Martial arts"
-          ],
+          "tags": ["Adventure", "Fantasy comedy", "Martial arts"],
           "upvotes": 27,
           "downvotes": 7
         },
@@ -233,11 +223,7 @@
           "title": "Dragon Ball Z",
           "description": "The sequel to the original Dragon Ball series, DBZ continues the adventures of Goku as he defends Earth from powerful foes, travels to distant planets, and harnesses the power of the Dragon Balls.",
           "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/DBZ_Logo.png/330px-DBZ_Logo.png",
-          "tags": [
-            "Adventure",
-            "Fantasy",
-            "Martial arts"
-          ],
+          "tags": ["Adventure", "Fantasy", "Martial arts"],
           "upvotes": 47,
           "downvotes": 2
         }
@@ -314,8 +300,7 @@
           "join_date": "2023-10-30T23:10:26.987Z"
         }
       ],
-      "priority": 1,
-      "img": "https://m.media-amazon.com/images/I/61iPSBYmqTL._AC_SX679_.jpg"
+      "priority": 1
     },
     {
       "id": 5,
@@ -329,10 +314,7 @@
           "title": "Oregairu",
           "description": "This series follows the life of Hachiman Hikigaya, a high school student with a pessimistic outlook on life. He is reluctantly involved in a service club where he navigates the complexities of human relationships and emotions.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/My_Teen_Romantic_Comedy_SNAFU_cover.jpg",
-          "tags": [
-            "Romantic comedy",
-            "Slice of life"
-          ],
+          "tags": ["Romantic comedy", "Slice of life"],
           "upvotes": 10,
           "downvotes": 2
         }
@@ -379,8 +361,7 @@
           "join_date": "2023-01-15T06:35:51.420Z"
         }
       ],
-      "priority": 2,
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5939sgSxZX5RjcqayfLPW5jPpsWWFYskEWV1vOzLdZqK67GU6rBO3tI7971El84DIIRQ&usqp=CAU"
+      "priority": 2
     },
     {
       "id": 6,
@@ -394,11 +375,7 @@
           "title": "One-Punch Man",
           "description": " Saitama, a superhero for fun, can defeat any opponent with a single punch. However, his overwhelming strength leaves him feeling bored and unfulfilled as he searches for a worthy adversary.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/OnePunchMan_manga_cover.png",
-          "tags": [
-            "Action",
-            "Comedy",
-            "Superhero"
-          ],
+          "tags": ["Action", "Comedy", "Superhero"],
           "upvotes": 33,
           "downvotes": 5
         }
@@ -445,8 +422,7 @@
           "join_date": "2023-05-03T12:25:19.654Z"
         }
       ],
-      "priority": 3,
-      "img": "https://i.ebayimg.com/00/s/NDY0WDY1MA==/z/eaUAAOSwml5jNvhG/$_12.JPG?set_id=880000500F"
+      "priority": 3
     },
     {
       "id": 7,
@@ -460,11 +436,7 @@
           "title": "Demon Slayer",
           "description": "A young boy, Tanjiro Kamado, becomes a demon slayer after his family is slaughtered by demons, and his sister is turned into one. The series chronicles his journey to avenge his family and cure his sister while battling powerful demons.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/0/09/Demon_Slayer_-_Kimetsu_no_Yaiba%2C_volume_1.jpg",
-          "tags": [
-            "Adventure",
-            "Dark fantasy",
-            "Martial arts"
-          ],
+          "tags": ["Adventure", "Dark fantasy", "Martial arts"],
           "upvotes": 44,
           "downvotes": 5
         },
@@ -473,11 +445,7 @@
           "title": "Jujutsu Kaisen",
           "description": "When high school student Yuji Itadori discovers a cursed talisman containing a malevolent curse, he becomes entangled in the world of curses and Jujutsu sorcerers. He joins a group of sorcerers in their battle against curses.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg",
-          "tags": [
-            "Adventure",
-            "Dark fantasy",
-            "Supernatural"
-          ],
+          "tags": ["Adventure", "Dark fantasy", "Supernatural"],
           "upvotes": 16,
           "downvotes": 4
         }
@@ -584,8 +552,7 @@
           "join_date": "2023-01-15T06:35:51.420Z"
         }
       ],
-      "priority": 4,
-      "img": "https://qph.cf2.quoracdn.net/main-qimg-f72cb5dc52225faec5749673e266b8fb"
+      "priority": 4
     },
     {
       "id": 8,
@@ -599,11 +566,7 @@
           "title": "Attack on Titan",
           "description": "In a world where humanity is on the brink of extinction due to giant humanoid creatures known as Titans, a group of young soldiers fights for survival within enormous walled cities. The story unfolds as they discover the truth behind the Titans and embark on a mission to reclaim their world.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/d/d6/Shingeki_no_Kyojin_manga_volume_1.jpg",
-          "tags": [
-            "Action",
-            "Dark fantasy",
-            "Post-apocalyptic"
-          ],
+          "tags": ["Action", "Dark fantasy", "Post-apocalyptic"],
           "upvotes": 27,
           "downvotes": 1
         }
@@ -680,8 +643,7 @@
           "join_date": "2023-01-15T06:35:51.420Z"
         }
       ],
-      "priority": 3,
-      "img": "https://qph.cf2.quoracdn.net/main-qimg-4b1aeaa82c6cc2f7dd5efdcb0ee36a5b-lq"
+      "priority": 3
     },
     {
       "id": 9,
@@ -695,11 +657,7 @@
           "title": "Dragon Ball Z",
           "description": "The sequel to the original Dragon Ball series, DBZ continues the adventures of Goku as he defends Earth from powerful foes, travels to distant planets, and harnesses the power of the Dragon Balls.",
           "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/DBZ_Logo.png/330px-DBZ_Logo.png",
-          "tags": [
-            "Adventure",
-            "Fantasy",
-            "Martial arts"
-          ],
+          "tags": ["Adventure", "Fantasy", "Martial arts"],
           "upvotes": 47,
           "downvotes": 2
         },
@@ -708,11 +666,7 @@
           "title": "One-Punch Man",
           "description": " Saitama, a superhero for fun, can defeat any opponent with a single punch. However, his overwhelming strength leaves him feeling bored and unfulfilled as he searches for a worthy adversary.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/OnePunchMan_manga_cover.png",
-          "tags": [
-            "Action",
-            "Comedy",
-            "Superhero"
-          ],
+          "tags": ["Action", "Comedy", "Superhero"],
           "upvotes": 33,
           "downvotes": 5
         }
@@ -779,8 +733,7 @@
           "join_date": "2023-10-30T23:10:26.987Z"
         }
       ],
-      "priority": 5,
-      "img": "https://static.wikia.nocookie.net/deathbattlefanon/images/4/4c/Gotama.jpg/revision/latest?cb=20160712190027"
+      "priority": 5
     },
     {
       "id": 10,
@@ -794,10 +747,7 @@
           "title": "One Piece",
           "description": "This long-running adventure follows Monkey D. Luffy and his pirate crew in their quest to find the ultimate treasure, the One Piece. Along the way, they encounter various islands, adversaries, and supernatural powers in a world of high-seas adventures.",
           "image_url": "https://upload.wikimedia.org/wikipedia/en/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg",
-          "tags": [
-            "Adventure",
-            "Science fantasy"
-          ],
+          "tags": ["Adventure", "Science fantasy"],
           "upvotes": 47,
           "downvotes": 1
         }
@@ -864,8 +814,7 @@
           "join_date": "2023-01-15T06:35:51.420Z"
         }
       ],
-      "priority": 5,
-      "img": "https://i.ytimg.com/vi/NO7C7bU7mu0/maxresdefault.jpg"
+      "priority": 5
     }
   ],
   "members": [
@@ -942,7 +891,7 @@
     {
       "id": 8,
       "username": "david_m",
-      "password": "davidpass73",
+      "password": "davidpass71",
       "last_name": "Miller",
       "first_name": "David",
       "email": "david.miller@yandex.com",
@@ -976,11 +925,7 @@
       "title": "Attack on Titan",
       "description": "In a world where humanity is on the brink of extinction due to giant humanoid creatures known as Titans, a group of young soldiers fights for survival within enormous walled cities. The story unfolds as they discover the truth behind the Titans and embark on a mission to reclaim their world.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/d/d6/Shingeki_no_Kyojin_manga_volume_1.jpg",
-      "tags": [
-        "Action",
-        "Dark fantasy",
-        "Post-apocalyptic"
-      ],
+      "tags": ["Action", "Dark fantasy", "Post-apocalyptic"],
       "upvotes": 27,
       "downvotes": 1
     },
@@ -989,10 +934,7 @@
       "title": "One Piece",
       "description": "This long-running adventure follows Monkey D. Luffy and his pirate crew in their quest to find the ultimate treasure, the One Piece. Along the way, they encounter various islands, adversaries, and supernatural powers in a world of high-seas adventures.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg",
-      "tags": [
-        "Adventure",
-        "Science fantasy"
-      ],
+      "tags": ["Adventure", "Science fantasy"],
       "upvotes": 47,
       "downvotes": 1
     },
@@ -1001,11 +943,7 @@
       "title": "Demon Slayer",
       "description": "A young boy, Tanjiro Kamado, becomes a demon slayer after his family is slaughtered by demons, and his sister is turned into one. The series chronicles his journey to avenge his family and cure his sister while battling powerful demons.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/0/09/Demon_Slayer_-_Kimetsu_no_Yaiba%2C_volume_1.jpg",
-      "tags": [
-        "Adventure",
-        "Dark fantasy",
-        "Martial arts"
-      ],
+      "tags": ["Adventure", "Dark fantasy", "Martial arts"],
       "upvotes": 44,
       "downvotes": 5
     },
@@ -1014,11 +952,7 @@
       "title": "My Hero Academia",
       "description": "In a world where people possess superpowers known as 'Quirks', a young boy named Izuku Midoriya aims to become a hero despite being born without any Quirk. He enrolls in a prestigious hero academy and faces numerous challenges.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/5/5a/Boku_no_Hero_Academia_Volume_1.png",
-      "tags": [
-        "Adventure",
-        "Science fantasy",
-        "Superhero"
-      ],
+      "tags": ["Adventure", "Science fantasy", "Superhero"],
       "upvotes": 21,
       "downvotes": 6
     },
@@ -1027,11 +961,7 @@
       "title": "Jujutsu Kaisen",
       "description": "When high school student Yuji Itadori discovers a cursed talisman containing a malevolent curse, he becomes entangled in the world of curses and Jujutsu sorcerers. He joins a group of sorcerers in their battle against curses.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/4/46/Jujutsu_kaisen.jpg",
-      "tags": [
-        "Adventure",
-        "Dark fantasy",
-        "Supernatural"
-      ],
+      "tags": ["Adventure", "Dark fantasy", "Supernatural"],
       "upvotes": 16,
       "downvotes": 4
     },
@@ -1040,11 +970,7 @@
       "title": "Naruto",
       "description": "Follow the journey of Naruto Uzumaki, a young ninja with dreams of becoming the Hokage and earning the respect of his village. The series explores themes of friendship, perseverance, and the pursuit of one's goals.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg",
-      "tags": [
-        "Adventure",
-        "Fantasy comedy",
-        "Martial arts"
-      ],
+      "tags": ["Adventure", "Fantasy comedy", "Martial arts"],
       "upvotes": 27,
       "downvotes": 7
     },
@@ -1053,11 +979,7 @@
       "title": "Dragon Ball Z",
       "description": "The sequel to the original Dragon Ball series, DBZ continues the adventures of Goku as he defends Earth from powerful foes, travels to distant planets, and harnesses the power of the Dragon Balls.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/DBZ_Logo.png/330px-DBZ_Logo.png",
-      "tags": [
-        "Adventure",
-        "Fantasy",
-        "Martial arts"
-      ],
+      "tags": ["Adventure", "Fantasy", "Martial arts"],
       "upvotes": 47,
       "downvotes": 2
     },
@@ -1066,10 +988,7 @@
       "title": "Oregairu",
       "description": "This series follows the life of Hachiman Hikigaya, a high school student with a pessimistic outlook on life. He is reluctantly involved in a service club where he navigates the complexities of human relationships and emotions.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/My_Teen_Romantic_Comedy_SNAFU_cover.jpg",
-      "tags": [
-        "Romantic comedy",
-        "Slice of life"
-      ],
+      "tags": ["Romantic comedy", "Slice of life"],
       "upvotes": 10,
       "downvotes": 2
     },
@@ -1078,11 +997,7 @@
       "title": "One-Punch Man",
       "description": " Saitama, a superhero for fun, can defeat any opponent with a single punch. However, his overwhelming strength leaves him feeling bored and unfulfilled as he searches for a worthy adversary.",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/OnePunchMan_manga_cover.png",
-      "tags": [
-        "Action",
-        "Comedy",
-        "Superhero"
-      ],
+      "tags": ["Action", "Comedy", "Superhero"],
       "upvotes": 33,
       "downvotes": 5
     },
@@ -1091,9 +1006,7 @@
       "title": "Sailor Moon",
       "description": "Usagi Tsukino discovers she is the reincarnation of Sailor Moon, a guardian destined to protect the world from evil forces. Along with her Sailor Guardians, she battles villains and uncovers her true destiny",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e5/SMVolume1.jpg",
-      "tags": [
-        "Magical girl"
-      ],
+      "tags": ["Magical girl"],
       "upvotes": 20,
       "downvotes": 7
     }
