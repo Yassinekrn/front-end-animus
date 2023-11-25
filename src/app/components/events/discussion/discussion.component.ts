@@ -26,15 +26,30 @@ export class DiscussionComponent implements OnInit {
   }
 
   userInDiscussion() {
-    // TODO: Call a service method to check if the user is in the discussion
-    // This is a placeholder, you should replace it with your actual service method
-    this.Joined = this.dataService.isUserInDiscussion(
-      this.userId,
-      this.discussion.id
-    );
+    this.dataService
+      .isUserInDiscussion(this.userId, this.discussion.id)
+      .subscribe((data) => {
+        this.Joined = data;
+      });
   }
 
-  joinLeaveDiscussion() {}
+  joinLeaveDiscussion() {
+    if (this.Joined) {
+      this.dataService
+        .removeUserFromDiscussion(this.userId, this.discussion.id)
+        .subscribe((data) => {
+          console.log('User removed from discussion successfully\n' + data);
+          this.Joined = false;
+        });
+    } else {
+      this.dataService
+        .addUserToDiscussion(this.userId, this.discussion.id)
+        .subscribe((data) => {
+          console.log('User added to discussion successfully\n' + data);
+          this.Joined = true;
+        });
+    }
+  }
 
   deleteDiscussion(id: number) {
     this.dataService.deleteDiscussion(id).subscribe((data) => {

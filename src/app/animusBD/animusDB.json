@@ -23,16 +23,6 @@
       ],
       "participants": [
         {
-          "id": 1,
-          "username": "sarah_j",
-          "password": "sarahpass",
-          "last_name": "Johnson",
-          "first_name": "Sarah",
-          "email": "sarah.johnson@gmail.com",
-          "role": "member",
-          "join_date": "2023-04-21T08:15:42.123Z"
-        },
-        {
           "id": 2,
           "username": "mike_s",
           "password": "mikepass123",
@@ -978,26 +968,6 @@
       "email": "james.white@mail.com",
       "role": "admin",
       "join_date": "2023-01-15T06:35:51.420Z"
-    },
-    {
-      "last_name": "fgb",
-      "first_name": "zedae",
-      "email": "ada@zrgi.fe",
-      "password": "azertyuio",
-      "confirm_password": "azertyuio",
-      "role": "member",
-      "join_date": "2023-11-22T17:35:26.228Z",
-      "id": 11
-    },
-    {
-      "last_name": "fgb",
-      "first_name": "gfb",
-      "email": "stee@gmail.com",
-      "username": "damnson123",
-      "password": "123456",
-      "role": "member",
-      "join_date": "2023-11-22T17:52:14.738Z",
-      "id": 12
     }
   ],
   "animes": [

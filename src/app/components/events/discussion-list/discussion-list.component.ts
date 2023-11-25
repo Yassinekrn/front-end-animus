@@ -32,14 +32,17 @@ export class DiscussionListComponent implements OnInit {
 
   // Function to filter discussions based on the search term
   filterDiscussions() {
-    this.filteredDiscussions = this.discussions.filter(
-      (discussion) =>
-        (discussion.title
-          .toLowerCase()
-          .includes(this.searchTerm.toLowerCase()) &&
-          discussion.spoiler === this.spoiler) ||
-        discussion.spoiler === false
-    );
+    this.filteredDiscussions = this.discussions.filter((discussion) => {
+      const searchTermLowerCase = this.searchTerm.toLowerCase();
+      const discussionTitleLowerCase = discussion.title.toLowerCase();
+
+      // Check if the title contains the search term and matches the spoiler condition
+      const titleMatches =
+        discussionTitleLowerCase.includes(searchTermLowerCase) &&
+        (discussion.spoiler === this.spoiler || discussion.spoiler === false);
+
+      return titleMatches;
+    });
   }
 
   // Function to handle the search button click
