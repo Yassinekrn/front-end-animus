@@ -48,7 +48,10 @@
       </button>
 
       <div *ngIf="showJoinLeaveButton">
-        <button (click)="joinLeaveDiscussion()" class="btn btn-primary mr-2">
+        <button
+          (click)="joinLeaveDiscussion()"
+          class="btn btn-light border border-secondary rounded mr-2"
+        >
           {{ Joined ? "Leave" : "Join" }}
         </button>
       </div>

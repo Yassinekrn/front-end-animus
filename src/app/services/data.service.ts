@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Anime } from '../classes/anime/anime';
 import { Member } from '../classes/member/member';
 import { Discussion } from '../classes/discussion/discussion';
@@ -137,8 +137,55 @@ export class DataService {
     return this.http.delete<Discussion>(`${this.discussionUrl}/${id}`);
   }
 
-  isUserInDiscussion(userId: string, discussionId: number): boolean {
-    //TODO: implement this method
-    return true;
+  isUserInDiscussion(
+    userId: string,
+    discussionId: number
+  ): Observable<boolean> {
+    return this.getDiscussion(discussionId).pipe(
+      map((discussion) =>
+        discussion.participants.some((p) => p.id === parseInt(userId))
+      )
+    );
+  }
+
+  // "id": 5,
+  //         "username": "olivia_b",
+  //         "password": "oliviapass90",
+  //         "last_name": "Brown",
+  //         "first_name": "Olivia",
+  //         "email": "olivia.brown@protonmail.com",
+  //         "role": "member",
+  //         "join_date": "2023-02-28T14:05:45.567Z"
+
+  addUserToDiscussion(
+    userId: string,
+    discussionId: number
+  ): Observable<boolean> {
+    this.getDiscussion(discussionId).subscribe((discussion) => {
+      let updatedDiscussion = { ...discussion };
+      this.getMember(parseInt(userId)).subscribe((member) => {
+        updatedDiscussion.participants.push(member);
+        return this.updateDiscussion(updatedDiscussion).subscribe((data) => {
+          console.log('User added to discussion successfully\n' + data);
+        });
+      });
+    });
+    return of(false);
+  }
+
+  removeUserFromDiscussion(
+    userId: string,
+    discussionId: number
+  ): Observable<boolean> {
+    this.getDiscussion(discussionId).subscribe((discussion) => {
+      let updatedDiscussion = { ...discussion };
+      updatedDiscussion.participants = updatedDiscussion.participants.filter(
+        (participant) => participant.id !== parseInt(userId)
+      );
+      return this.updateDiscussion(updatedDiscussion).subscribe((data) => {
+        console.log('User removed from discussion successfully\n' + data);
+      });
+    });
+    return of(false);
   }
 }
