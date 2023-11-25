@@ -9,7 +9,7 @@ export class AnimeListComponent {
   // Function to generate a random ID for MyAnimeList
   getRandomAnimeId(): number {
     // Generate a random number based on the range of available IDs or a different logic
-    return Math.floor(Math.random() * 47998) + 1;
+    return Math.floor(Math.random() * 5000) + 1;
   }
 
   // Function to generate a random query for Novel Updates
@@ -31,12 +31,12 @@ export class AnimeListComponent {
   // Click event handler for the button
   redirectToRandomAnime(): void {
     const randomAnimeId = this.getRandomAnimeId();
-    window.location.href = `https://myanimelist.net/anime/${randomAnimeId}`;
+    window.open(`https://myanimelist.net/anime/${randomAnimeId}`);
   }
 
   redirectToRandomNovel(): void {
     const randomNovelQuery = this.getRandomNovelQuery();
-    window.location.href = `https://www.novelupdates.com/?s=${randomNovelQuery}`;
+    window.open(`https://www.novelupdates.com/?s=${randomNovelQuery}`);
   }
 
   randomAnime() {
