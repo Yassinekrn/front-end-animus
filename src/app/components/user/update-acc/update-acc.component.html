@@ -5,34 +5,35 @@
       <div class="col-md-12">
         <h1 class="display-4 text-center mt-5 mb-5">
           <i class="fas fa-user-circle"></i>
-          Welcome user: {{ user?.first_name + " " + user?.last_name }}
+          Welcome user: <b>{{ user?.first_name + " " + user?.last_name }}</b>
         </h1>
       </div>
     </div>
 
     <div class="row container">
-      <div class="col-md-6">
+      <div class="col-md-3"></div>
+      <div class="col-md-4">
         <p class="lead">
           <i class="fas fa-envelope"></i>
-          email: {{ user?.email }}
+          <b> email:</b> {{ user?.email }}
         </p>
         <p class="lead">
           <i class="fas fa-user-tag"></i>
-          role: {{ user?.role }}
+          <b> role:</b> {{ user?.role }}
         </p>
         <p class="lead">
           <i class="fas fa-calendar-alt"></i>
-          created at: {{ user?.join_date | date }}
+          <b> Joined at:</b> {{ user?.join_date | date }}
         </p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4">
         <p class="lead">
           <i class="fas fa-id-card"></i>
-          username: {{ user?.username }}
+          <b> username:</b> {{ user?.username }}
         </p>
         <p class="lead">
           <i class="fas fa-lock"></i>
-          password: {{ user?.password | hidepwd }}
+          <b> password:</b> {{ user?.password | hidepwd }}
         </p>
         <button class="btn btn-primary btn-lg" routerLink="/update">
           <i class="fas fa-key"></i>

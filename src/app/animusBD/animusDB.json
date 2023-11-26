@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Attack on Titan : The End",
       "description": "This discussion delves into the finale of Attack on Titan, focusing on the conclusion of the series, key plot developments, character arcs, and the overall impact of the ending on fans and the anime community.",
-      "date": "2023-12-06",
+      "date": "2023-12-06T14:30:00.000Z",
       "spoiler": true,
       "animes": [
         {
@@ -49,16 +49,6 @@
           "join_date": "2023-02-28T14:05:45.567Z"
         },
         {
-          "id": 10,
-          "username": "james_w",
-          "password": "jamespass83",
-          "last_name": "White",
-          "first_name": "James",
-          "email": "james.white@mail.com",
-          "role": "admin",
-          "join_date": "2023-01-15T06:35:51.420Z"
-        },
-        {
           "id": 9,
           "username": "emma_j",
           "password": "emmapass29",
@@ -67,6 +57,16 @@
           "email": "emma.jackson@rediffmail.com",
           "role": "admin",
           "join_date": "2023-10-30T23:10:26.987Z"
+        },
+        {
+          "id": 10,
+          "username": "james_w",
+          "password": "jamespass83",
+          "last_name": "White",
+          "first_name": "James",
+          "email": "james.white@mail.com",
+          "role": "admin",
+          "join_date": "2023-01-15T06:35:51.420Z"
         }
       ],
       "priority": 4
@@ -74,8 +74,8 @@
     {
       "id": 2,
       "title": "Does Deku deserve one for all?",
-      "description": "In the context of My Hero Academia, this topic explores whether the main character, Izuku Midoriya (Deku), truly deserves to inherit the powerful Quirk known as One for All, considering his journey, character growth, and actions throughout the series.",
-      "date": "2023-12-09",
+      "description": " In the context of My Hero Academia, this topic explores whether the main character, Izuku Midoriya (Deku), truly deserves to inherit the powerful Quirk known as One for All, considering his journey, character growth, and actions throughout the series.",
+      "date": "2023-12-09T14:30:00.000Z",
       "spoiler": false,
       "animes": [
         {
@@ -126,7 +126,7 @@
       "id": 3,
       "title": "Sailor Moon and it's effect on shoujo manga",
       "description": "This discussion highlights the influence and significance of the iconic magical girl series Sailor Moon on the shoujo manga genre, its role in shaping the portrayal of female protagonists, and its impact on subsequent works.",
-      "date": "2023-12-10",
+      "date": "2023-12-10T14:30:00.000Z",
       "spoiler": false,
       "animes": [
         {
@@ -197,7 +197,7 @@
       "id": 4,
       "title": "Is Dragon Ball part of the big 3?",
       "description": "This topic debates whether Dragon Ball, alongside Naruto and One Piece, deserves recognition as part of the Big 3 in the world of shonen anime and manga and the factors contributing to this designation.",
-      "date": "2023-12-14",
+      "date": "2023-12-14T14:30:00.000Z",
       "spoiler": false,
       "animes": [
         {
@@ -306,7 +306,7 @@
       "id": 5,
       "title": "Why is Hikigaya Hachiman so relatable to teenage boys?",
       "description": "Focusing on the character Hachiman Hikigaya from My Youth Romantic Comedy Is Wrong, As I Expected (Oregairu), this discussion explores the qualities and experiences that make Hachiman a relatable figure to adolescent males.",
-      "date": "2023-12-16",
+      "date": "2023-12-16T14:30:00.000Z",
       "spoiler": false,
       "animes": [
         {
@@ -367,7 +367,7 @@
       "id": 6,
       "title": "Is one-punch man good despite the fact that it's a comedy or because of it?",
       "description": "This topic examines the strengths and appeal of One-Punch Man, considering its unique blend of humor and action, and whether the comedy enhances or detracts from the overall quality of the series.",
-      "date": "2023-12-17",
+      "date": "2023-12-17T14:30:00.000Z",
       "spoiler": false,
       "animes": [
         {
@@ -428,7 +428,7 @@
       "id": 7,
       "title": "Cursed Spirits VS Demons",
       "description": "In the context of Jujutsu Kaisen and Demon Slayer, this discussion compares and contrasts cursed spirits and demons, exploring their characteristics, roles, and significance within their respective series.",
-      "date": "2023-12-21",
+      "date": "2023-12-21T14:30:00.000Z",
       "spoiler": false,
       "animes": [
         {
@@ -558,7 +558,7 @@
       "id": 8,
       "title": "Eren Yeager: A Hero, A Villain, An AntiHero",
       "description": "This discussion focuses on the character arc of Eren Yeager in Attack on Titan, exploring how he transitions from a hero to an anti-hero and ultimately takes on the role of the villain as the series progresses. It delves into the character's development and motivations during this transformation.",
-      "date": "2023-12-23",
+      "date": "2023-12-23T14:30:00.000Z",
       "spoiler": true,
       "animes": [
         {
@@ -649,7 +649,7 @@
       "id": 9,
       "title": "Saitama VS Goku : A Battle Of The Strongest ",
       "description": "This hypothetical battle discussion pits Saitama from One-Punch Man against Goku from Dragon Ball in a debate about who would win in a showdown, considering their respective powers and characteristics.",
-      "date": "2023-12-24",
+      "date": "2023-12-24T14:30:00.000Z",
       "spoiler": false,
       "animes": [
         {
@@ -739,7 +739,7 @@
       "id": 10,
       "title": "Who is JoyBoy?",
       "description": "This topic explores the mystery of JoyBoy, a enigmatic figure from the world of One Piece, discussing various fan theories, clues, and speculations surrounding his identity and significance within the series.",
-      "date": "2023-12-28",
+      "date": "2023-12-28T14:30:00.000Z",
       "spoiler": true,
       "animes": [
         {

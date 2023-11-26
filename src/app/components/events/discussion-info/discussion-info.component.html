@@ -1,5 +1,21 @@
 <div class="container" *ngIf="discussion">
   <div class="card">
+    <!-- <div class="text-center my-3">
+      <img
+        *ngIf="discussion.img"
+        [src]="discussion.img"
+        alt="Discussion Image"
+        class="img-thumbnail"
+        style="max-width: 100%; max-height: 200px; width: auto; height: auto"
+      />
+      <div *ngIf="!discussion.img" class="text-muted">No Image Available</div>
+    </div> -->
+    <img
+      [src]="discussion.img"
+      alt="Discussion Image"
+      class="card-img-top img-thumbnail"
+      style="max-height: 450px; width: auto; height: auto"
+    />
     <div class="card-body">
       <h5 class="card-title">
         Discussion N°{{ discussion.id }} | {{ discussion.title }}

@@ -14,6 +14,7 @@ import { AccountsComponent } from './components/private/accounts/accounts.compon
 import { UpdateAccComponent } from './components/user/update-acc/update-acc.component';
 import { AccountFormComponent } from './components/forms/account-form/account-form.component';
 import { CreateDiscussionComponent } from './components/forms/create-discussion/create-discussion.component';
+import { adminAuthGuard } from './guards/admin-auth.guard';
 
 /* 
 defaults to home page /home
@@ -65,7 +66,7 @@ const routes: Routes = [
     path: 'admin',
     title: 'Admin',
     component: AdminComponent,
-    canActivate: [authGuard],
+    canActivate: [adminAuthGuard],
     children: [
       { path: '', redirectTo: 'accounts', pathMatch: 'full' },
       { path: 'accounts', title: 'Accounts', component: AccountsComponent },

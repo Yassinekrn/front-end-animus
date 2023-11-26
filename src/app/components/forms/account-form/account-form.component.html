@@ -1,35 +1,77 @@
 <app-navbar></app-navbar>
-<div class="container">
+
+<div class="container background">
   <br />
-  <form [formGroup]="changePasswordForm" (ngSubmit)="onSubmit()">
+
+  <form
+    [formGroup]="changePasswordForm"
+    (ngSubmit)="onSubmit()"
+    class="minimal-form"
+  >
     <div class="form-group">
-      <label for="oldPassword">Old Password:</label>
-      <input
-        type="password"
-        class="form-control"
-        id="oldPassword"
-        formControlName="oldPassword"
-        placeholder="Enter old password"
-      />
+      <label for="oldPassword">Old Password*</label>
+      <div class="input-group">
+        <input
+          type="password"
+          class="form-control"
+          id="oldPassword"
+          formControlName="oldPassword"
+          placeholder="Enter old password"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text"><i class="fas fa-lock"></i></span>
+        </div>
+      </div>
+      <div
+        class="alert alert-warning"
+        *ngIf="
+          !changePasswordForm.controls['oldPassword'].valid &&
+          changePasswordForm.controls['oldPassword'].touched
+        "
+      >
+        Old Password is required and must have at least 5 letters.
+      </div>
     </div>
 
     <div class="form-group">
-      <label for="newPassword">New Password:</label>
-      <input
-        type="password"
-        class="form-control"
-        id="newPassword"
-        formControlName="newPassword"
-        placeholder="Enter new password"
-      />
+      <label for="newPassword">New Password*</label>
+      <div class="input-group">
+        <input
+          type="password"
+          class="form-control"
+          id="newPassword"
+          formControlName="newPassword"
+          placeholder="Enter new password"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text"><i class="fas fa-lock"></i></span>
+        </div>
+      </div>
+      <div
+        class="alert alert-warning"
+        *ngIf="
+          !changePasswordForm.controls['newPassword'].valid &&
+          changePasswordForm.controls['newPassword'].touched
+        "
+      >
+        New Password is required and must have at least 5 letters.
+      </div>
     </div>
 
     <button
       type="submit"
-      class="btn btn-primary btn-lg"
-      [disabled]="!this.changePasswordForm.valid"
+      class="btn btn-primary btn-block"
+      [disabled]="!changePasswordForm.valid"
     >
       Save Changes
     </button>
+    <div class="text-center mt-2 mb-2">
+      <button class="btn btn-danger" routerLink="/user">
+        Cancel ( Return to Profile )
+      </button>
+    </div>
+    <div *ngIf="IncorrectOldPasswd" class="alert alert-danger mt-3">
+      Old Password is incorrect
+    </div>
   </form>
 </div>

@@ -17,6 +17,7 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class AccountFormComponent implements OnInit {
   changePasswordForm: FormGroup;
+  IncorrectOldPasswd: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -26,8 +27,8 @@ export class AccountFormComponent implements OnInit {
 
   ngOnInit() {
     this.changePasswordForm = this.formBuilder.group({
-      oldPassword: ['', [Validators.required, Validators.minLength(6)]],
-      newPassword: ['', [Validators.required, Validators.minLength(6)]],
+      oldPassword: ['', [Validators.required, Validators.minLength(5)]],
+      newPassword: ['', [Validators.required, Validators.minLength(5)]],
     });
   }
 
@@ -45,6 +46,7 @@ export class AccountFormComponent implements OnInit {
       UpdatedMember = user;
       if (user.password !== this.changePasswordForm.get('oldPassword').value) {
         console.log('Old password is incorrect');
+        this.IncorrectOldPasswd = true;
         return;
       }
       UpdatedMember.password = newPassword;
