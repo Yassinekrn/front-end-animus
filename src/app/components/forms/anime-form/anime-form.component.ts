@@ -6,6 +6,8 @@ import {
   FormArray,
   ValidatorFn,
   ValidationErrors,
+  FormControl,
+  AbstractControl,
 } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Anime } from 'src/app/classes/anime/anime';
@@ -75,8 +77,9 @@ export class AnimeFormComponent {
           ),
         ],
       ],
-      tags: this.createTagsCheckboxes, // Create FormArray for tags
+      tags: this.fb.array([]), // Initialize FormArray for tags
     });
+    this.createAnimeForm.setControl('tags', this.createTagsCheckboxes());
   }
 
   createTagsCheckboxes(): FormArray {
@@ -85,6 +88,11 @@ export class AnimeFormComponent {
     });
 
     return this.fb.array(formArray, this.atLeastOneCheckboxValidator());
+  }
+
+  getTagControl(index: number): FormControl | null {
+    const tagsArray = this.createAnimeForm.get('tags') as FormArray;
+    return tagsArray.controls[index] as FormControl;
   }
 
   atLeastOneCheckboxValidator(minRequired = 1): ValidatorFn {

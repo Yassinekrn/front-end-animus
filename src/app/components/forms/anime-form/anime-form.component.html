@@ -39,7 +39,7 @@
             type="checkbox"
             class="form-check-input"
             [id]="tag"
-            [formControlName]="tag"
+            [formControl]="getTagControl(tagsList.indexOf(tag))"
           />
           <label class="form-check-label" [for]="tag">{{ tag }}</label>
         </div>
