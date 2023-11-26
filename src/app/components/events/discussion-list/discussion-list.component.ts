@@ -25,9 +25,9 @@ export class DiscussionListComponent implements OnInit {
     this.showEditDeleteButton = this.userRole === 'admin';
 
     this.dataService.getDiscussions().subscribe((data) => {
-      // this.discussions = data;
-      // this.filteredDiscussions = [...data]; // Initialize filtered discussions with all discussions
-      this.filteredDiscussions = data;
+      this.discussions = data;
+      this.filteredDiscussions = [...data]; // Initialize filtered discussions with all discussions
+      // this.filteredDiscussions = data;
     });
   }
 
