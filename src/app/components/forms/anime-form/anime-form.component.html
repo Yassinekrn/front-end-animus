@@ -13,7 +13,18 @@
         formControlName="title"
         id="title"
       />
-      <!-- Error messages for title validation -->
+      <div *ngIf="isTitleTooShort()" class="alert alert-warning">
+        Title should be at least 5 characters.
+      </div>
+      <div *ngIf="isTitleTooLong()" class="alert alert-warning">
+        Title should be maximum 100 characters.
+      </div>
+      <div *ngIf="isTitleNotCapitalized()" class="alert alert-warning">
+        Title should start with a capital letter.
+      </div>
+      <div *ngIf="isTitleInvalid()" class="alert alert-danger">
+        Title is required.
+      </div>
     </div>
     <div class="form-group">
       <label for="description">
@@ -24,12 +35,26 @@
         formControlName="description"
         id="description"
       ></textarea>
-      <!-- Error messages for description validation -->
+      <div *ngIf="isDescriptionTooShort()" class="alert alert-warning">
+        Description should be at least 100 characters.
+      </div>
+      <div *ngIf="isDescriptionTooLong()" class="alert alert-warning">
+        Description should be maximum 500 characters.
+      </div>
+      <div *ngIf="isDescriptionNotCapitalized()" class="alert alert-warning">
+        Description should start with a capital letter.
+      </div>
+      <div *ngIf="isDescriptionInvalid()" class="alert alert-danger">
+        Description is required.
+      </div>
     </div>
     <div class="form-group">
       <label for="img"><i class="far fa-image"></i> Image URL</label>
       <input type="text" class="form-control" formControlName="img" id="img" />
-      <!-- Error messages for image URL validation -->
+      <div *ngIf="isImageInvalid()" class="alert alert-danger">
+        Image URL is required and should be a valid URL ending with .png, .jpg,
+        or .jpeg.
+      </div>
     </div>
     <div class="form-group">
       <label for="tags"><i class="fas fa-tags"></i> Tags</label>
@@ -44,7 +69,9 @@
           <label class="form-check-label" [for]="tag">{{ tag }}</label>
         </div>
       </div>
-      <!-- Error messages for tags validation -->
+      <div *ngIf="isAtLeastOneTagSelected()" class="alert alert-danger">
+        At least one anime should be selected.
+      </div>
     </div>
     <div class="form-group btn-group">
       <button type="submit" class="btn btn-primary">

@@ -111,7 +111,9 @@ export class AnimeFormComponent {
       const formData = this.createAnimeForm.value;
 
       // Extract selected tags
-      const selectedTags = this.tagsList.filter((tag) => formData[tag]);
+      const selectedTags = this.tagsList.filter(
+        (tag, index) => formData.tags[index]
+      );
 
       // Create the anime object
       this.anime = {
@@ -125,7 +127,7 @@ export class AnimeFormComponent {
       this.dataService.addAnime(this.anime).subscribe((data) => {
         console.log('Anime created:', data);
         // Navigate back to the 'main' route or other desired route
-        this.router.navigate(['/animes']);
+        this.router.navigate(['/home/animes']);
       });
     } else {
       // Handle invalid form
@@ -134,7 +136,7 @@ export class AnimeFormComponent {
 
   cancelCreate() {
     // Navigate back to the 'main' route or other desired route
-    this.router.navigate(['/animes']);
+    this.router.navigate(['/home/animes']);
   }
 
   // Validation functions for form fields

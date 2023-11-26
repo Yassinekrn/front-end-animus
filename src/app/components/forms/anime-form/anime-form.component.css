@@ -1,0 +1,58 @@
+/* Error messages */
+.alert {
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+/* Valid and invalid input fields */
+.form-control {
+  margin-bottom: 10px;
+}
+
+.form-control.ng-invalid {
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.form-control.ng-valid {
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+/* Checkbox styling */
+.form-check-input {
+  margin-right: 5px;
+}
+
+.form-check-input.ng-invalid + .form-check-label::before {
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+.form-check-input.ng-valid + .form-check-label::before {
+  border: 1px solid green;
+  border-radius: 3px;
+}
+
+/* Button styling */
+.btn {
+  margin-right: 5px;
+}
+
+/* Container and form alignment */
+.container {
+  background-color: #cbd3d8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Flexbox for button alignment */
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
