@@ -83,16 +83,19 @@ const routes: Routes = [
     path: 'update_disc/:id',
     title: 'Update Discussion',
     component: DiscussionUpdateComponent,
+    canActivate: [adminAuthGuard],
   },
   {
     path: 'create_disc',
     title: 'Create Discussion',
     component: CreateDiscussionComponent,
+    canActivate: [adminAuthGuard],
   },
   {
     path: 'create_anime',
     title: 'Create Anime',
     component: AnimeFormComponent,
+    canActivate: [adminAuthGuard],
   },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
