@@ -1,0 +1,31 @@
+<div class="container" *ngIf="anime">
+  <div class="card">
+    <img
+      [src]="anime.image_url"
+      alt="anime Image"
+      class="img-thumbnail float-left mr-3"
+      style="width: 250px; height: 400px"
+    />
+    <div class="card-body">
+      <h5 class="card-title">anime N°{{ anime.id }} | {{ anime.title }}</h5>
+      <div class="tags-section">
+        <strong>Tags:</strong>
+        <div class="tag-list">
+          <span *ngFor="let tag of anime.tags" class="badge badge-success">
+            {{ tag }}
+          </span>
+        </div>
+      </div>
+      <p class="card-text">
+        <strong>Description: </strong> {{ anime.description }}
+      </p>
+    </div>
+  </div>
+  <br />
+  <div class="text-center">
+    <button class="btn btn-dark" routerLink="/home/animes">
+      Go back to animes
+    </button>
+  </div>
+</div>
+<br />

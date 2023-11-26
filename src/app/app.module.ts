@@ -31,7 +31,7 @@ import { AccountFormComponent } from './components/forms/account-form/account-fo
 import { HidepwdPipe } from './pipes/hidepwd.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateDiscussionComponent } from './components/forms/create-discussion/create-discussion.component';
-
+import { AnimeInfoComponent } from './components/anime_ranks/anime-info/anime-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,6 +57,7 @@ import { CreateDiscussionComponent } from './components/forms/create-discussion/
     AccountFormComponent,
     HidepwdPipe,
     CreateDiscussionComponent,
+    AnimeInfoComponent,
   ],
   imports: [
     BrowserModule,

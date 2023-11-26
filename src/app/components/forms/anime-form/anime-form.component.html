@@ -1,1 +1,58 @@
-<p>anime-form works!</p>
+<div class="container mt-4">
+  <h2 class="mb-4 text-center">Create Anime</h2>
+  <form
+    *ngIf="createAnimeForm"
+    [formGroup]="createAnimeForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="form-group">
+      <label for="title"><i class="fas fa-heading"></i> Title</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="title"
+        id="title"
+      />
+      <!-- Error messages for title validation -->
+    </div>
+    <div class="form-group">
+      <label for="description">
+        <i class="fas fa-align-left"></i> Description</label
+      >
+      <textarea
+        class="form-control"
+        formControlName="description"
+        id="description"
+      ></textarea>
+      <!-- Error messages for description validation -->
+    </div>
+    <div class="form-group">
+      <label for="img"><i class="far fa-image"></i> Image URL</label>
+      <input type="text" class="form-control" formControlName="img" id="img" />
+      <!-- Error messages for image URL validation -->
+    </div>
+    <div class="form-group">
+      <label for="tags"><i class="fas fa-tags"></i> Tags</label>
+      <div>
+        <div class="form-check" *ngFor="let tag of tagsList">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            [id]="tag"
+            [formControlName]="tag"
+          />
+          <label class="form-check-label" [for]="tag">{{ tag }}</label>
+        </div>
+      </div>
+      <!-- Error messages for tags validation -->
+    </div>
+    <div class="form-group btn-group">
+      <button type="submit" class="btn btn-primary">
+        <i class="fas fa-plus-circle"></i> Create Anime
+      </button>
+      <button type="button" class="btn btn-danger" (click)="cancelCreate()">
+        <i class="fas fa-times-circle"></i> Cancel Create
+      </button>
+    </div>
+  </form>
+</div>

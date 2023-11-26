@@ -1,1 +1,32 @@
-<p>anime works!</p>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-text"><strong>Title:</strong> {{ anime.title }}</h5>
+    <div class="tags-section">
+      <strong>Tags:</strong>
+      <div class="tag-list">
+        <span *ngFor="let tag of anime.tags" class="badge badge-success">
+          {{ tag }}
+        </span>
+      </div>
+    </div>
+    <p class="card-text">
+      <strong>Description:</strong> {{ anime.description }}
+    </p>
+
+    <div class="button-section d-flex align-items-center">
+      <button
+        class="btn btn-info mr-2"
+        [routerLink]="'/home/animes/' + anime.id"
+      >
+        Info
+      </button>
+
+      <div *ngIf="showEditDeleteButton">
+        <button class="btn btn-danger" (click)="deleteAnime(anime.id)">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<br />

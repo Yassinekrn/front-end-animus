@@ -1,11 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Anime } from 'src/app/classes/anime/anime';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-anime-list',
   templateUrl: './anime-list.component.html',
   styleUrls: ['./anime-list.component.css'],
 })
-export class AnimeListComponent {
+export class AnimeListComponent implements OnInit {
+  onAnimeDeleted(deletedAnimeId: number) {
+    this.animes = this.animes.filter((anime) => anime.id !== deletedAnimeId);
+  }
+  animes: Anime[];
+  showEditDeleteButton: boolean = false;
+  userRole: string = '';
+  constructor(private dataService: DataService, private router: Router) {}
+
+  ngOnInit(): void {
+    this.userRole = localStorage.getItem('userRole');
+    this.showEditDeleteButton = this.userRole === 'admin';
+    this.dataService.getAnimes().subscribe((data) => {
+      this.animes = data;
+    });
+  }
+
   // Function to generate a random ID for MyAnimeList
   getRandomAnimeId(): number {
     // Generate a random number based on the range of available IDs or a different logic

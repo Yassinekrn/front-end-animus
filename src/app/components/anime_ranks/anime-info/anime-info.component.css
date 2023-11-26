@@ -1,3 +1,7 @@
+.float-left {
+  float: left;
+  margin-right: 15px;
+}
 .tag-list {
   display: flex;
   gap: 5px; /* Adjust the space between tags */

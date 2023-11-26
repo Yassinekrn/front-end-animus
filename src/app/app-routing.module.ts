@@ -15,6 +15,8 @@ import { UpdateAccComponent } from './components/user/update-acc/update-acc.comp
 import { AccountFormComponent } from './components/forms/account-form/account-form.component';
 import { CreateDiscussionComponent } from './components/forms/create-discussion/create-discussion.component';
 import { adminAuthGuard } from './guards/admin-auth.guard';
+import { AnimeInfoComponent } from './components/anime_ranks/anime-info/anime-info.component';
+import { AnimeFormComponent } from './components/forms/anime-form/anime-form.component';
 
 /* 
 defaults to home page /home
@@ -44,6 +46,11 @@ const routes: Routes = [
         path: 'discussions/:id',
         title: 'Discussion Infos',
         component: DiscussionInfoComponent,
+      },
+      {
+        path: 'animes/:id',
+        title: 'Anime Infos',
+        component: AnimeInfoComponent,
       },
       { path: '**', redirectTo: 'discussions', pathMatch: 'full' },
     ],
@@ -81,6 +88,11 @@ const routes: Routes = [
     path: 'create_disc',
     title: 'Create Discussion',
     component: CreateDiscussionComponent,
+  },
+  {
+    path: 'create_anime',
+    title: 'Create Anime',
+    component: AnimeFormComponent,
   },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
