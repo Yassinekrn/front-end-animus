@@ -1,8 +1,13 @@
 <div class="container">
   <div class="container">
-    <button class="btn btn-primary ml-5 text-center" (click)="randomAnime()">
-      Try your luck!
-    </button>
+    <div class="text-center">
+      <button
+        class="btn btn-light border border-2 ml-5 text-center"
+        (click)="randomAnime()"
+      >
+        Try your luck!
+      </button>
+    </div>
     <div class="text-center mt-3 mb-4" *ngIf="userRole == 'admin'">
       <button
         class="btn btn-primary ml-5 text-center"
